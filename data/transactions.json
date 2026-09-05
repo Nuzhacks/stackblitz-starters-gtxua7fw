@@ -3,7 +3,7 @@
   "baseCurrency": "GBP",
   "lastImportedAt": "2026-09-05",
   "sources": [
-    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-22:10"
+    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-22:11"
   ],
   "assets": [
     {
@@ -439,6 +439,173 @@
           "qty": 462.66233767,
           "cost": 2000,
           "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "AAVE",
+      "name": "Aave",
+      "coingeckoId": "aave",
+      "colour": "#b6509e",
+      "transactions": [
+        {
+          "date": "2026-03-24",
+          "type": "buy",
+          "qty": 2.34,
+          "cost": 199.192,
+          "currency": "GBP"
+        },
+        {
+          "date": "2026-03-13",
+          "type": "buy",
+          "qty": 2.19189,
+          "cost": 200.015,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-05-03",
+          "type": "sell",
+          "qty": 0.013,
+          "cost": 4.68104,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-03-05",
+          "type": "buy",
+          "qty": 0.49,
+          "cost": 123.48,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-03-03",
+          "type": "buy",
+          "qty": 2.03,
+          "cost": 598.592,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "RENDER",
+      "name": "Render",
+      "coingeckoId": "render-token",
+      "colour": "#fb5a5a",
+      "transactions": [
+        {
+          "date": "2026-03-07",
+          "type": "buy",
+          "qty": 240.22,
+          "cost": 249.907,
+          "currency": "GBP"
+        },
+        {
+          "date": "2026-03-07",
+          "type": "buy",
+          "qty": 191.59,
+          "cost": 200.104,
+          "currency": "GBP"
+        },
+        {
+          "date": "2025-02-03",
+          "type": "buy",
+          "qty": 86.05,
+          "cost": 402,
+          "currency": "USD",
+          "fxToGbp": 1.24463,
+          "costGbp": 322.99
+        },
+        {
+          "date": "2025-01-29",
+          "type": "buy",
+          "qty": 99.7749,
+          "cost": 600.628,
+          "currency": "USD",
+          "fxToGbp": 1.24463,
+          "costGbp": 482.59
+        }
+      ]
+    },
+    {
+      "symbol": "KAS",
+      "name": "Kaspa",
+      "coingeckoId": "kaspa",
+      "colour": "#70c7ba",
+      "transactions": [
+        {
+          "date": "2026-03-07",
+          "type": "buy",
+          "qty": 10754.089,
+          "cost": 252.4,
+          "currency": "GBP"
+        },
+        {
+          "date": "2025-01-11",
+          "type": "buy",
+          "qty": 5311.913,
+          "cost": 627.927,
+          "currency": "USD",
+          "fxToGbp": 1.22115,
+          "costGbp": 514.21
+        }
+      ]
+    },
+    {
+      "symbol": "GRT",
+      "name": "The Graph",
+      "coingeckoId": "the-graph",
+      "colour": "#6747ed",
+      "transactions": [
+        {
+          "date": "2026-03-07",
+          "type": "buy",
+          "qty": 15233.26,
+          "cost": 300.019,
+          "currency": "GBP"
+        },
+        {
+          "date": "2025-02-02",
+          "type": "buy",
+          "qty": 294.292,
+          "cost": 38.9747,
+          "currency": "GBP"
+        },
+        {
+          "date": "2024-12-02",
+          "type": "buy",
+          "qty": 2179.39,
+          "cost": 500.774,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "CRV",
+      "name": "Curve DAO",
+      "coingeckoId": "curve-dao-token",
+      "colour": "#fbbf24",
+      "transactions": [
+        {
+          "date": "2023-01-21",
+          "type": "buy",
+          "qty": 117.09,
+          "cost": 100.615,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-05-03",
+          "type": "sell",
+          "qty": 9.0,
+          "cost": 21.15,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-04-13",
+          "type": "buy",
+          "qty": 442.69,
+          "cost": 1366.92,
+          "currency": "USD",
+          "fxToGbp": 1.37624,
+          "costGbp": 993.24
         }
       ]
     }

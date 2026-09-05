@@ -74,6 +74,51 @@
       "totalProfitLoss": -2452.06,
       "totalProfitLossPct": -75.0,
       "impliedPrice": 0.585272
+    },
+    "AAVE": {
+      "holdings": 7.03889,
+      "holdingsValue": 695.23,
+      "totalCost": 1121.28,
+      "averageNetCost": 158.63,
+      "totalProfitLoss": -421.37,
+      "totalProfitLossPct": -37.6,
+      "impliedPrice": 98.769926
+    },
+    "RENDER": {
+      "holdings": 617.6349,
+      "holdingsValue": 667.56,
+      "totalCost": 1255.59,
+      "averageNetCost": 2.03,
+      "totalProfitLoss": -588.03,
+      "totalProfitLossPct": -46.8,
+      "impliedPrice": 1.080827
+    },
+    "KAS": {
+      "holdings": 16066.002,
+      "holdingsValue": 361.15,
+      "totalCost": 766.61,
+      "averageNetCost": 0.04771623,
+      "totalProfitLoss": -405.46,
+      "totalProfitLossPct": -52.9,
+      "impliedPrice": 0.022479
+    },
+    "GRT": {
+      "holdings": 17706.942,
+      "holdingsValue": 233.12,
+      "totalCost": 839.77,
+      "averageNetCost": 0.04742587,
+      "totalProfitLoss": -606.65,
+      "totalProfitLossPct": -72.2,
+      "impliedPrice": 0.013165
+    },
+    "CRV": {
+      "holdings": 550.78,
+      "holdingsValue": 153.86,
+      "totalCost": 1093.85,
+      "averageNetCost": 1.95,
+      "totalProfitLoss": -918.84,
+      "totalProfitLossPct": -84.0,
+      "impliedPrice": 0.279368
     }
   }
 }

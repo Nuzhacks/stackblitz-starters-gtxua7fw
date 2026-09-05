@@ -1,6 +1,6 @@
 # Portfolio record
 
-Transcribed from CoinGecko app screenshots taken on 5 September 2026 (22:09–22:10).
+Transcribed from CoinGecko app screenshots taken on 5 September 2026 (22:09–22:11).
 The machine-readable source of truth is [`data/transactions.json`](data/transactions.json);
 this file is the human-readable copy, generated from it.
 
@@ -20,13 +20,19 @@ showed dates only, no times of day.**
 | UNI Uniswap | 236.2155 | £1,240.23 | £889.81 | £1.50 | £3.7606 | +£351.91 (+39.5%) | 5 |
 | SUI Sui | 1,700.377 | £1,008.82 | £2,254.95 | — | £1.3261 | −£1,246.13 (-55.3%) | 2 |
 | FIL Filecoin | 1,395.95085767 | £817.01 | £3,269.07 | — | £2.3418 | −£2,452.06 (-75.0%) | 4 |
-| **Total** | | **£41,708.46** | **£26,571.28** | **£1,074.62** | | **+£16,211.80 (+61.0%)** | **49** |
+| AAVE Aave | 7.03889 | £695.23 | £1,121.28 | £4.68 | £158.63 | −£421.37 (-37.6%) | 5 |
+| RENDER Render | 617.6349 | £667.56 | £1,255.59 | — | £2.0329 | −£588.03 (-46.8%) | 4 |
+| KAS Kaspa | 16,066.002 | £361.15 | £766.61 | — | £0.0477 | −£405.46 (-52.9%) | 2 |
+| GRT The Graph | 17,706.942 | £233.12 | £839.77 | — | £0.0474 | −£606.65 (-72.2%) | 3 |
+| CRV Curve DAO | 550.78 | £153.86 | £1,093.86 | £21.15 | £1.9476 | −£918.84 (-84.0%) | 3 |
+| **Total** | | **£43,819.38** | **£31,648.39** | **£1,100.45** | | **+£13,271.45 (+41.9%)** | **66** |
 
-Eight assets, 49 transactions. Three positions are underwater: FIL (−75%), SUI (−55%)
-and LINK (−9%), together about £4,036 of loss against £20,248 of gains elsewhere.
+Thirteen assets, 66 transactions. **Eight of the thirteen are underwater**, together
+about £6,977 of loss against £20,248 of gains. Almost the entire gain sits in two
+positions: BTC (+£9,991) and ETH (+£6,732) are 78% of it, and 68% of portfolio value.
+Worst by percentage: CRV (−84%), FIL (−75%), GRT (−72%).
 
 ## Transactions by asset
-
 ## BTC — Bitcoin
 
 | Date | Type | Quantity | Amount | Unit price |
@@ -116,6 +122,48 @@ and LINK (−9%), together about £4,036 of loss against £20,248 of gains elsew
 | 20 Dec 2024 | Buy | +139.71 | £499.79 | £3.5773 |
 | 23 Nov 2024 | Buy | +462.66233767 | £2,000.00 | £4.3228 |
 
+## AAVE — Aave
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 24 Mar 2026 | Buy | +2.34 | £199.19 | £85.12 |
+| 13 Mar 2026 | Buy | +2.19189 | £200.01 | £91.25 |
+| 3 May 2021 | Sell | −0.013 | £4.68 | £360.08 |
+| 5 Mar 2021 | Buy | +0.49 | £123.48 | £252.00 |
+| 3 Mar 2021 | Buy | +2.03 | £598.59 | £294.87 |
+
+## RENDER — Render
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 7 Mar 2026 | Buy | +240.22 | £249.91 | £1.0403 |
+| 7 Mar 2026 | Buy | +191.59 | £200.10 | £1.0444 |
+| 3 Feb 2025 | Buy | +86.05 | £322.99 ($402.00) | £3.7535 |
+| 29 Jan 2025 | Buy | +99.7749 | £482.59 ($600.63) | £4.8368 |
+
+## KAS — Kaspa
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 7 Mar 2026 | Buy | +10,754.089 | £252.40 | £0.0235 |
+| 11 Jan 2025 | Buy | +5,311.913 | £514.21 ($627.93) | £0.0968 |
+
+## GRT — The Graph
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 7 Mar 2026 | Buy | +15,233.26 | £300.02 | £0.0197 |
+| 2 Feb 2025 | Buy | +294.292 | £38.97 | £0.1324 |
+| 2 Dec 2024 | Buy | +2,179.39 | £500.77 | £0.2298 |
+
+## CRV — Curve DAO
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 21 Jan 2023 | Buy | +117.09 | £100.61 | £0.8593 |
+| 3 May 2021 | Sell | −9 | £21.15 | £2.3500 |
+| 13 Apr 2021 | Buy | +442.69 | £993.24 ($1,366.92) | £2.2436 |
+
 ## How the numbers are calculated
 
 The dashboard follows CoinGecko's own conventions so figures reconcile with the app the
@@ -128,7 +176,7 @@ data came from:
 - Transfers move quantity without touching cost or proceeds
 
 Verified: computed holdings, total cost, average net cost, profit and profit % match the
-CoinGecko figures for all eight assets (see `data/coingecko-snapshot.json`). The only
+CoinGecko figures for all thirteen assets (see `data/coingecko-snapshot.json`). The only
 difference anywhere is UNI's profit percentage, where CoinGecko displays 39.6% and this
 calculation gives 39.5% — a rounding artefact on a £1.50 sale, worth 5p in 100.
 
@@ -141,10 +189,10 @@ screenshots matched to within a fraction of a percent on every asset.
 2. **Zero-cost entries** — ETH 1.31 (9 Dec 2021) and SOL 2.32 (8 Dec 2023) are recorded
    with £0 cost, and SOL's four transfers in carry no cost either. Both flatter the
    average cost on those two positions. Worth correcting if the real prices are known.
-3. **USD conversions** — nine transactions were priced in dollars. The rate on each was
-   chosen so the per-asset total reconciles exactly with CoinGecko's own total:
-   BTC 1.4242, ETH 1.3997, LINK 1.3586, XRP 1.3770, UNI 1.3951, FIL 1.2461. All are
-   close to the real rates on those dates except BTC's, which is a little high — the
-   underlying £ figures are rounded on screen, so a small drift is expected.
-   XRP's rate is a blend, since its dollar buys span December 2020 and February 2021.
-4. **Possible missing assets** — eight were captured. Add more as screenshots arrive.
+3. **USD conversions** — fourteen transactions were priced in dollars. The rate on each
+   was chosen so the per-asset total reconciles exactly with CoinGecko's own total:
+   BTC 1.4242, ETH 1.3997, LINK 1.3586, XRP 1.3770, UNI 1.3951, FIL 1.2461,
+   RENDER 1.2446, KAS 1.2212, CRV 1.3762. All are close to the real rates on those dates
+   except BTC's, which is a little high — the underlying £ figures are rounded on screen,
+   so a small drift is expected. XRP's is a blend, as its dollar buys span two dates.
+4. **Possible missing assets** — thirteen were captured. Add more as screenshots arrive.
