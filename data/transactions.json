@@ -3,7 +3,7 @@
   "baseCurrency": "GBP",
   "lastImportedAt": "2026-09-05",
   "sources": [
-    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-22:18"
+    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-22:19"
   ],
   "assets": [
     {
@@ -100,8 +100,8 @@
           "qty": 0.94609685,
           "cost": 986.482,
           "currency": "USD",
-          "fxToGbp": 1.399671,
-          "costGbp": 704.8
+          "fxToGbp": 1.42372,
+          "costGbp": 692.89
         },
         {
           "date": "2021-02-23",
@@ -109,8 +109,8 @@
           "qty": 1.38769803,
           "cost": 2084.82,
           "currency": "USD",
-          "fxToGbp": 1.399671,
-          "costGbp": 1489.5
+          "fxToGbp": 1.42372,
+          "costGbp": 1464.35
         },
         {
           "date": "2021-01-08",
@@ -118,8 +118,8 @@
           "qty": 1.01183382,
           "cost": 1338.78,
           "currency": "USD",
-          "fxToGbp": 1.399671,
-          "costGbp": 956.5
+          "fxToGbp": 1.347538,
+          "costGbp": 993.54
         }
       ]
     },
@@ -305,8 +305,8 @@
           "qty": 19.990229,
           "cost": 7.09726,
           "currency": "USD",
-          "fxToGbp": 1.37696,
-          "costGbp": 5.15
+          "fxToGbp": 1.42372,
+          "costGbp": 4.99
         },
         {
           "date": "2021-02-23",
@@ -314,8 +314,8 @@
           "qty": 8.197767,
           "cost": 4.78724,
           "currency": "USD",
-          "fxToGbp": 1.37696,
-          "costGbp": 3.48
+          "fxToGbp": 1.42372,
+          "costGbp": 3.36
         },
         {
           "date": "2021-02-23",
@@ -323,8 +323,8 @@
           "qty": 650.0,
           "cost": 364,
           "currency": "USD",
-          "fxToGbp": 1.37696,
-          "costGbp": 264.35
+          "fxToGbp": 1.42372,
+          "costGbp": 255.67
         },
         {
           "date": "2020-12-22",
@@ -332,8 +332,8 @@
           "qty": 1393.430799,
           "cost": 503.057,
           "currency": "USD",
-          "fxToGbp": 1.37696,
-          "costGbp": 365.34
+          "fxToGbp": 1.343993,
+          "costGbp": 374.3
         }
       ]
     },
@@ -740,8 +740,8 @@
           "qty": 33.53019067,
           "cost": 1109.84,
           "currency": "EUR",
-          "fxToGbp": 1.16019,
-          "costGbp": 956.6
+          "fxToGbp": 1.15876,
+          "costGbp": 957.79
         },
         {
           "date": "2021-03-03",
@@ -749,8 +749,8 @@
           "qty": 19.0,
           "cost": 494,
           "currency": "USD",
-          "fxToGbp": 1.38,
-          "costGbp": 357.97
+          "fxToGbp": 1.3956,
+          "costGbp": 353.97
         },
         {
           "date": "2021-02-02",
@@ -758,8 +758,8 @@
           "qty": 14.92,
           "cost": 246.18,
           "currency": "USD",
-          "fxToGbp": 1.38,
-          "costGbp": 178.39
+          "fxToGbp": 1.35859,
+          "costGbp": 181.2
         }
       ]
     },
@@ -777,6 +777,144 @@
           "currency": "USD",
           "fxToGbp": 1.22063,
           "costGbp": 506.04
+        }
+      ]
+    },
+    {
+      "symbol": "VET",
+      "name": "VeChain",
+      "coingeckoId": "vechain",
+      "colour": "#15bdff",
+      "transactions": [
+        {
+          "date": "2025-01-26",
+          "type": "buy",
+          "qty": 1696.0,
+          "cost": 70.8053,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-05-03",
+          "type": "buy",
+          "qty": 40.0,
+          "cost": 6,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-04-29",
+          "type": "buy",
+          "qty": 3612.0,
+          "cost": 500.065,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-03-03",
+          "type": "buy",
+          "qty": 742.6,
+          "cost": 34.9572,
+          "currency": "USD",
+          "fxToGbp": 1.39163,
+          "costGbp": 25.12
+        }
+      ]
+    },
+    {
+      "symbol": "RAY",
+      "name": "Raydium",
+      "coingeckoId": "raydium",
+      "colour": "#c200fb",
+      "transactions": [
+        {
+          "date": "2022-02-01",
+          "type": "buy",
+          "qty": 41.07322,
+          "cost": 128.702,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "COMP",
+      "name": "Compound",
+      "coingeckoId": "compound-governance-token",
+      "colour": "#00d395",
+      "transactions": [
+        {
+          "date": "2022-02-22",
+          "type": "transfer_out",
+          "qty": 0.1,
+          "cost": 0,
+          "currency": "GBP",
+          "note": "Moved off exchange - no proceeds"
+        },
+        {
+          "date": "2022-01-11",
+          "type": "buy",
+          "qty": 0.71,
+          "cost": 100.014,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-11-25",
+          "type": "buy",
+          "qty": 0.79,
+          "cost": 171.226,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "FLOW",
+      "name": "Flow",
+      "coingeckoId": "flow",
+      "colour": "#00ef8b",
+      "transactions": [
+        {
+          "date": "2025-01-12",
+          "type": "buy",
+          "qty": 772.59,
+          "cost": 480.862,
+          "currency": "GBP"
+        },
+        {
+          "date": "2022-01-14",
+          "type": "buy",
+          "qty": 13.99,
+          "cost": 84.6031,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-03-03",
+          "type": "buy",
+          "qty": 39.62,
+          "cost": 592.715,
+          "currency": "USD",
+          "fxToGbp": 1.39744,
+          "costGbp": 424.14
+        }
+      ]
+    },
+    {
+      "symbol": "KSM",
+      "name": "Kusama",
+      "coingeckoId": "kusama",
+      "colour": "#cbd5e1",
+      "transactions": [
+        {
+          "date": "2023-01-21",
+          "type": "buy",
+          "qty": 2.0,
+          "cost": 60.02,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-02-23",
+          "type": "buy",
+          "qty": 4.01252365,
+          "cost": 1010.67,
+          "currency": "USD",
+          "fxToGbp": 1.42326,
+          "costGbp": 710.11
         }
       ]
     }

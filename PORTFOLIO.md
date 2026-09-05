@@ -1,6 +1,6 @@
 # Portfolio record
 
-Transcribed from CoinGecko app screenshots taken on 5 September 2026 (22:09–22:18).
+Transcribed from CoinGecko app screenshots taken on 5 September 2026 (22:09–22:19).
 The machine-readable source of truth is [`data/transactions.json`](data/transactions.json);
 this file is the human-readable copy, generated from it.
 
@@ -13,7 +13,7 @@ showed dates only, no times of day.**
 | Asset | Quantity | Value | Invested | Taken out | Avg net cost | Profit / loss | Txns |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | BTC Bitcoin | 0.30871163 | £18,213.97 | £9,288.44 | £1,065.71 | £26,635.64 | +£9,991.24 (+107.6%) | 6 |
-| ETH Ethereum | 6.41900752 | £11,766.50 | £5,034.49 | — | £784.31 | +£6,732.01 (+133.7%) | 7 |
+| ETH Ethereum | 6.41900752 | £11,766.50 | £5,034.47 | — | £784.31 | +£6,732.03 (+133.7%) | 7 |
 | LINK Chainlink | 375.50268982 | £3,337.05 | £3,682.72 | £7.42 | £9.7877 | −£338.25 (-9.2%) | 11 |
 | SOL Solana | 35.01108 | £2,678.00 | £1,363.13 | — | £38.93 | +£1,314.87 (+96.5%) | 9 |
 | XRP XRP | 2,524.618795 | £2,646.88 | £788.68 | — | £0.3124 | +£1,858.20 (+235.6%) | 5 |
@@ -30,15 +30,24 @@ showed dates only, no times of day.**
 | XLM Stellar | 768.2521266 | £104.89 | £203.79 | — | £0.2653 | −£98.90 (-48.5%) | 1 |
 | DOT Polkadot | 100.58019067 | £67.98 | £1,717.24 | — | £17.07 | −£1,649.26 (-96.0%) | 6 |
 | FIDA Bonfida | 2,748.73471447 | £39.52 | £506.04 | — | £0.1841 | −£466.52 (-92.2%) | 1 |
-| **Total** | | **£44,259.89** | **£34,709.09** | **£1,100.45** | | **+£10,651.25 (+30.7%)** | **82** |
+| VET VeChain | 6,090.6 | £31.21 | £601.99 | — | £0.0988 | −£570.78 (-94.8%) | 4 |
+| RAY Raydium | 41.07322 | £26.46 | £128.70 | — | £3.1335 | −£102.24 (-79.4%) | 1 |
+| COMP Compound | 1.4 | £21.06 | £271.24 | — | £193.74 | −£250.18 (-92.2%) | 3 |
+| FLOW Flow | 826.2 | £17.60 | £989.61 | — | £1.1978 | −£972.01 (-98.2%) | 3 |
+| KSM Kusama | 6.01252365 | £16.59 | £770.13 | — | £128.09 | −£753.54 (-97.8%) | 2 |
+| **Total** | | **£44,372.81** | **£37,470.74** | **£1,100.45** | | **+£8,002.52 (+21.4%)** | **95** |
 
-Eighteen assets, 82 transactions. **Thirteen of the eighteen are underwater**, together
-about £9,597 of loss against £20,248 of gains.
+Twenty-three assets, 95 transactions. **Eighteen of the twenty-three are underwater**,
+together about £12,246 of loss against £20,248 of gains.
 
-The gain is entirely concentrated: BTC and ETH are 94% of it and 68% of portfolio value.
-Only five positions are up at all (BTC, ETH, SOL, XRP, UNI). Worst by percentage:
-DOT (−96%), FIDA (−92%), CRV (−84%). Worst in money: FIL (−£2,452), DOT (−£1,649),
-SUI (−£1,246).
+Only five positions are up: BTC, ETH, SOL, XRP and UNI. BTC and ETH alone are 68% of
+portfolio value and, with the other three, the whole of the gain.
+
+Worst by percentage: FLOW (−98%), KSM (−98%), DOT (−96%), VET (−95%).
+Worst in money: FIL (−£2,452), DOT (−£1,649), SUI (−£1,246), FLOW (−£972).
+
+Eleven positions are now worth under £250 each; together they hold £1,013 against
+£6,410 invested.
 
 ## Transactions by asset
 ## BTC — Bitcoin
@@ -60,9 +69,9 @@ SUI (−£1,246).
 | 14 Jun 2022 | Buy | +1.50337882 | £1,498.69 | £996.88 |
 | 9 Dec 2021 | Buy | +1.31 | — | — |
 | 1 Apr 2021 | Buy | +0.35 | £385.00 | £1,100.00 |
-| 23 Feb 2021 | Buy | +0.94609685 | £704.80 ($986.482) | £744.96 |
-| 23 Feb 2021 | Buy | +1.38769803 | £1,489.50 ($2,084.82) | £1,073.36 |
-| 8 Jan 2021 | Buy | +1.01183382 | £956.50 ($1,338.78) | £945.31 |
+| 23 Feb 2021 | Buy | +0.94609685 | £692.89 ($986.482) | £732.37 |
+| 23 Feb 2021 | Buy | +1.38769803 | £1,464.35 ($2,084.82) | £1,055.24 |
+| 8 Jan 2021 | Buy | +1.01183382 | £993.54 ($1,338.78) | £981.92 |
 
 ## LINK — Chainlink
 
@@ -99,10 +108,10 @@ SUI (−£1,246).
 | Date | Type | Quantity | Amount | Unit price |
 |---|---|---:|---:|---:|
 | 21 Jan 2023 | Buy | +453 | £150.36 | £0.3319 |
-| 23 Feb 2021 | Buy | +19.990229 | £5.15 ($7.0973) | £0.2576 |
-| 23 Feb 2021 | Buy | +8.197767 | £3.48 ($4.7872) | £0.4245 |
-| 23 Feb 2021 | Buy | +650 | £264.35 ($364) | £0.4067 |
-| 22 Dec 2020 | Buy | +1,393.430799 | £365.34 ($503.057) | £0.2622 |
+| 23 Feb 2021 | Buy | +19.990229 | £4.99 ($7.0973) | £0.2496 |
+| 23 Feb 2021 | Buy | +8.197767 | £3.36 ($4.7872) | £0.4099 |
+| 23 Feb 2021 | Buy | +650 | £255.67 ($364) | £0.3933 |
+| 22 Dec 2020 | Buy | +1,393.430799 | £374.30 ($503.057) | £0.2686 |
 
 ## UNI — Uniswap
 
@@ -203,15 +212,53 @@ SUI (−£1,246).
 | 9 Nov 2024 | Transfer in | +17.99 | — | — |
 | 12 Sep 2021 | Buy | +4.34 | £98.65 | £22.73 |
 | 23 May 2021 | Buy | +10.8 | £125.64 | £11.63 |
-| 21 Mar 2021 | Buy | +33.53019067 | £956.60 (€1,109.84) | £28.53 |
-| 3 Mar 2021 | Buy | +19 | £357.97 ($494) | £18.84 |
-| 2 Feb 2021 | Buy | +14.92 | £178.39 ($246.18) | £11.96 |
+| 21 Mar 2021 | Buy | +33.53019067 | £957.79 (€1,109.84) | £28.57 |
+| 3 Mar 2021 | Buy | +19 | £353.97 ($494) | £18.63 |
+| 2 Feb 2021 | Buy | +14.92 | £181.20 ($246.18) | £12.14 |
 
 ## FIDA — Bonfida
 
 | Date | Type | Quantity | Amount | Unit price |
 |---|---|---:|---:|---:|
 | 11 Jan 2025 | Buy | +2,748.73471447 | £506.04 ($617.689) | £0.1841 |
+
+## VET — VeChain
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 26 Jan 2025 | Buy | +1,696 | £70.81 | £0.0417 |
+| 3 May 2021 | Buy | +40 | £6.00 | £0.1500 |
+| 29 Apr 2021 | Buy | +3,612 | £500.06 | £0.1384 |
+| 3 Mar 2021 | Buy | +742.6 | £25.12 ($34.9572) | £0.0338 |
+
+## RAY — Raydium
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 1 Feb 2022 | Buy | +41.07322 | £128.70 | £3.1335 |
+
+## COMP — Compound
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 22 Feb 2022 | Transfer out | −0.1 | — | — |
+| 11 Jan 2022 | Buy | +0.71 | £100.01 | £140.86 |
+| 25 Nov 2021 | Buy | +0.79 | £171.23 | £216.74 |
+
+## FLOW — Flow
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 12 Jan 2025 | Buy | +772.59 | £480.86 | £0.6224 |
+| 14 Jan 2022 | Buy | +13.99 | £84.60 | £6.0474 |
+| 3 Mar 2021 | Buy | +39.62 | £424.14 ($592.715) | £10.71 |
+
+## KSM — Kusama
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 21 Jan 2023 | Buy | +2 | £60.02 | £30.01 |
+| 23 Feb 2021 | Buy | +4.01252365 | £710.11 ($1,010.67) | £176.97 |
 
 ## How the numbers are calculated
 
@@ -225,9 +272,9 @@ data came from:
 - Transfers move quantity without touching cost or proceeds
 
 Verified: computed holdings, total cost, average net cost, profit and profit % match the
-CoinGecko figures for all eighteen assets (see `data/coingecko-snapshot.json`). The only
-difference anywhere is UNI's profit percentage, where CoinGecko displays 39.6% and this
-calculation gives 39.5% — a rounding artefact on a £1.50 sale, worth 5p in 100.
+CoinGecko figures for all twenty-three assets (see `data/coingecko-snapshot.json`). The
+only difference anywhere is UNI's profit percentage, where CoinGecko displays 39.6% and
+this calculation gives 39.5% — a rounding artefact on a £1.50 sale, worth 5p in 100.
 
 Cross-checked against live CoinGecko prices on import day: the prices implied by the
 screenshots matched to within a fraction of a percent on every asset.
@@ -239,12 +286,18 @@ screenshots matched to within a fraction of a percent on every asset.
    (8 Dec 2023) are recorded with £0 cost, and the transfers in on SOL, ADA and DOT carry
    no cost either. All flatter the average cost on those positions. Worth correcting if
    the real prices are known.
-3. **Foreign-currency conversions** — nineteen transactions were priced in USD and one in
-   EUR. The rate on each was chosen so the per-asset total reconciles exactly with
-   CoinGecko's own total: BTC 1.4242, ETH 1.3997, LINK 1.3586, XRP 1.3770, UNI 1.3951,
-   FIL 1.2461, RENDER 1.2446, KAS 1.2212, CRV 1.3762, ADA 1.3982, XLM 1.3778,
-   FIDA 1.2206, and for DOT 1.3800 (USD) with 1.1602 (EUR). All are close to the real
-   rates on those dates except BTC's, which is a little high — the underlying £ figures
-   are rounded on screen, so a small drift is expected. XRP's and DOT's dollar rates are
-   blends, as their dollar buys span two dates each.
-4. **Possible missing assets** — eighteen were captured. Add more as screenshots arrive.
+3. **Foreign-currency conversions** — twenty-three transactions were priced in USD and one
+   in EUR. Each rate is chosen so its asset's total reconciles exactly with CoinGecko's
+   own total. Where several assets share a purchase date, the rate is cross-checked
+   between them, which pins it down independently:
+   - **23 Feb 2021** — BTC implies 1.4242 and KSM 1.4233, so 1.4237 is used for ETH and
+     XRP on that date. Both are well above the real market rate of about 1.411, so this
+     looks like the rate CoinGecko itself applied rather than an error here.
+   - **3 Mar 2021** — UNI 1.3951, VET 1.3916, FLOW 1.3974 and ADA 1.3982 agree closely;
+     1.3956 is used for DOT.
+   - **2 Feb 2021** — LINK implies 1.3586, also used for DOT.
+   - Remaining single-transaction rates: FIL 1.2461, RENDER 1.2446, KAS 1.2212,
+     CRV 1.3762, XLM 1.3778, FIDA 1.2206, ETH 1.3475 (8 Jan 2021), XRP 1.3440
+     (22 Dec 2020), and DOT's euro buy at 1.1588.
+4. **Possible missing assets** — twenty-three were captured. Add more as screenshots
+   arrive.

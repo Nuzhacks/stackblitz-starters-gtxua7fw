@@ -164,6 +164,51 @@
       "totalProfitLoss": -466.52,
       "totalProfitLossPct": -92.2,
       "impliedPrice": 0.014378
+    },
+    "VET": {
+      "holdings": 6090.6,
+      "holdingsValue": 31.21,
+      "totalCost": 601.99,
+      "averageNetCost": 0.098839,
+      "totalProfitLoss": -570.78,
+      "totalProfitLossPct": -94.8,
+      "impliedPrice": 0.00512427
+    },
+    "RAY": {
+      "holdings": 41.07322,
+      "holdingsValue": 26.46,
+      "totalCost": 128.7,
+      "averageNetCost": 3.13,
+      "totalProfitLoss": -102.24,
+      "totalProfitLossPct": -79.4,
+      "impliedPrice": 0.644206
+    },
+    "COMP": {
+      "holdings": 1.4,
+      "holdingsValue": 21.06,
+      "totalCost": 271.24,
+      "averageNetCost": 193.74,
+      "totalProfitLoss": -250.18,
+      "totalProfitLossPct": -92.2,
+      "impliedPrice": 15.042857
+    },
+    "FLOW": {
+      "holdings": 826.2,
+      "holdingsValue": 17.6,
+      "totalCost": 989.61,
+      "averageNetCost": 1.2,
+      "totalProfitLoss": -972.01,
+      "totalProfitLossPct": -98.2,
+      "impliedPrice": 0.02130235
+    },
+    "KSM": {
+      "holdings": 6.01252365,
+      "holdingsValue": 16.59,
+      "totalCost": 770.13,
+      "averageNetCost": 128.09,
+      "totalProfitLoss": -753.53,
+      "totalProfitLossPct": -97.8,
+      "impliedPrice": 2.759313
     }
   }
 }
