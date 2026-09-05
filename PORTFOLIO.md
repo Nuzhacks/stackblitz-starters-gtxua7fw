@@ -1,6 +1,6 @@
 # Portfolio record
 
-Transcribed from CoinGecko app screenshots taken on 5 September 2026 (22:09–22:20).
+Transcribed from CoinGecko app screenshots taken on 5 September 2026 (22:09–22:55).
 The machine-readable source of truth is [`data/transactions.json`](data/transactions.json);
 this file is the human-readable copy, generated from it.
 
@@ -35,22 +35,26 @@ showed dates only, no times of day.**
 | COMP Compound | 1.4 | £21.06 | £271.24 | — | £193.74 | −£250.18 (-92.2%) | 3 |
 | FLOW Flow | 826.2 | £17.60 | £989.61 | — | £1.1978 | −£972.01 (-98.2%) | 3 |
 | KSM Kusama | 6.01252365 | £16.59 | £770.13 | — | £128.09 | −£753.54 (-97.8%) | 2 |
-| OMI ECOMI | 75,687 | £13.12 | £461.38 | £0.04 | £0.0061 | −£448.22 (-97.1%) | 4 |
+| OMI ECOMI | 75,687 | £13.12 | £461.38 | £0.04 | £0.0060953812 | −£448.22 (-97.1%) | 4 |
 | OCEAN Ocean Protocol | 116.46 | £12.56 | £86.36 | — | £0.7415 | −£73.80 (-85.5%) | 1 |
-| **Total** | | **£44,398.49** | **£38,018.48** | **£1,100.49** | | **+£7,480.51 (+19.7%)** | **100** |
+| BASE Base | 21,131,953.523 | £11.96 | £251.01 | — | £0.0000118783 | −£239.05 (-95.2%) | 1 |
+| ATOM Cosmos Hub | 10 | £11.55 | £169.52 | — | £16.95 | −£157.97 (-93.2%) | 1 |
+| EWT Energy Web Token | 45.67953 | £9.32 | £392.33 | — | £8.5886 | −£383.01 (-97.6%) | 2 |
+| XTZ Tezos | 49.38 | £8.69 | £171.64 | — | £3.4759 | −£162.95 (-94.9%) | 1 |
+| **Total** | | **£44,440.01** | **£39,002.98** | **£1,100.49** | | **+£6,537.53 (+16.8%)** | **105** |
 
-Twenty-five assets, 100 transactions. **Twenty of the twenty-five are underwater**,
-together about £12,768 of loss against £20,248 of gains.
+Twenty-nine assets, 105 transactions. **Twenty-four of the twenty-nine are underwater**,
+together about £13,711 of loss against £20,248 of gains.
 
-Only five positions are up: BTC, ETH, SOL, XRP and UNI. BTC and ETH alone are 68% of
+Only five positions are up: BTC, ETH, SOL, XRP and UNI. BTC and ETH alone are 67% of
 portfolio value and, with the other three, the whole of the gain.
 
-Worst by percentage: FLOW (−98%), KSM (−98%), OMI (−97%), DOT (−96%), VET (−95%).
+Worst by percentage: FLOW (−98%), EWT (−98%), KSM (−98%), OMI (−97%), DOT (−96%).
 Worst in money: FIL (−£2,452), DOT (−£1,649), SUI (−£1,246), FLOW (−£972), CRV (−£919).
 
-**Fourteen positions are worth under £250 each. Together they hold £966 against £8,304
-invested** — 88% of the money in that tail is gone. Break-even on most of them needs a
-move of 5x or more, and at these sizes fees and spreads take a real bite out of anything
+**Eighteen positions are worth under £250 each. Together they hold £1,008 against £9,288
+invested** — 89% of the money in that tail is gone. Break-even on most needs a move of
+5x or more, and at these sizes fees and spreads take a real bite out of anything
 recovered.
 
 ## Transactions by asset
@@ -268,16 +272,41 @@ recovered.
 
 | Date | Type | Quantity | Amount | Unit price |
 |---|---|---:|---:|---:|
-| 23 Aug 2021 | Sell | −20 | £0.04 | £0.0020 |
-| 16 Apr 2021 | Buy | +52,013 | £300.97 | £0.0058 |
-| 2 Apr 2021 | Buy | +11,766 | £84.21 ($116.482) | £0.0072 |
-| 18 Mar 2021 | Buy | +11,928 | £76.20 ($106.159) | £0.0064 |
+| 23 Aug 2021 | Sell | −20 | £0.04 | £0.002044 |
+| 16 Apr 2021 | Buy | +52,013 | £300.97 | £0.0057864765 |
+| 2 Apr 2021 | Buy | +11,766 | £84.21 ($116.482) | £0.0071570627 |
+| 18 Mar 2021 | Buy | +11,928 | £76.20 ($106.159) | £0.00638833 |
 
 ## OCEAN — Ocean Protocol
 
 | Date | Type | Quantity | Amount | Unit price |
 |---|---|---:|---:|---:|
 | 23 Aug 2021 | Buy | +116.46 | £86.36 | £0.7415 |
+
+## BASE — Base
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 7 Dec 2024 | Buy | +21,131,953.523 | £251.01 | £0.0000118783 |
+
+## ATOM — Cosmos Hub
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 3 Mar 2021 | Buy | +10 | £169.52 ($236.2) | £16.95 |
+
+## EWT — Energy Web Token
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 23 May 2021 | Buy | +16.32 | £86.87 | £5.3227 |
+| 25 Apr 2021 | Buy | +29.35953 | £305.46 | £10.40 |
+
+## XTZ — Tezos
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 3 Mar 2021 | Buy | +49.38 | £171.64 ($238.999) | £3.4759 |
 
 ## How the numbers are calculated
 
@@ -291,7 +320,7 @@ data came from:
 - Transfers move quantity without touching cost or proceeds
 
 Verified: computed holdings, total cost, average net cost and profit match the CoinGecko
-figures for all twenty-five assets (see `data/coingecko-snapshot.json`). A few profit
+figures for all twenty-nine assets (see `data/coingecko-snapshot.json`). A few profit
 percentages differ in the first decimal place — UNI, OMI and OCEAN — because CoinGecko
 rounds its displayed value and holdings before dividing. The largest such gap is worth
 about 6p in 100.
@@ -306,15 +335,15 @@ screenshots matched to within a fraction of a percent on every asset.
    (8 Dec 2023) are recorded with £0 cost, and the transfers in on SOL, ADA and DOT carry
    no cost either. All flatter the average cost on those positions. Worth correcting if
    the real prices are known.
-3. **Foreign-currency conversions** — twenty-five transactions were priced in USD and one
+3. **Foreign-currency conversions** — twenty-seven transactions were priced in USD and one
    in EUR. Each rate is chosen so its asset's total reconciles exactly with CoinGecko's
    own total. Where several assets share a purchase date, the rate is cross-checked
    between them, which pins it down independently:
    - **23 Feb 2021** — BTC implies 1.4242 and KSM 1.4233, so 1.4237 is used for ETH and
      XRP on that date. Both are well above the real market rate of about 1.411, so this
      looks like the rate CoinGecko itself applied rather than an error here.
-   - **3 Mar 2021** — UNI 1.3951, VET 1.3916, FLOW 1.3974 and ADA 1.3982 agree closely;
-     1.3956 is used for DOT.
+   - **3 Mar 2021** — six assets agree closely: UNI 1.3951, VET 1.3916, FLOW 1.3974,
+     ADA 1.3982, ATOM 1.3933, XTZ 1.3924. The mean, 1.3956, is used for DOT.
    - **2 Feb 2021** — LINK implies 1.3586, also used for DOT.
    - Single-transaction rates: FIL 1.2461, RENDER 1.2446, KAS 1.2212, CRV 1.3762,
      XLM 1.3778, FIDA 1.2206, ETH 1.3475 (8 Jan 2021), XRP 1.3440 (22 Dec 2020), and
@@ -322,5 +351,9 @@ screenshots matched to within a fraction of a percent on every asset.
    - **OMI** spans two dates with no corroboration available, so its two dollar buys use
      rates in the real market's proportion for 18 March and 2 April 2021 (1.3932 and
      1.3832), scaled slightly so the total reconciles.
-4. **Possible missing assets** — twenty-five were captured. Add more as screenshots
+4. **BASE identification** — the ticker BASE belongs to four different tokens on
+   CoinGecko. The one held here is the coin with id `base`, identified by matching the
+   screenshot's implied price of about £0.00000057 against all four candidates; it agreed
+   to within 0.04% and no other was within a factor of 4,000.
+5. **Possible missing assets** — twenty-nine were captured. Add more as screenshots
    arrive.

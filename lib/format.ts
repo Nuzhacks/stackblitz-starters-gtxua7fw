@@ -1,11 +1,16 @@
 const gbp0 = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP', maximumFractionDigits: 0 });
 const gbp2 = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP', minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const gbp4 = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP', minimumFractionDigits: 2, maximumFractionDigits: 4 });
+// Sub-penny prices need significant digits, not fixed decimals, or they all render as £0.0000.
+const gbpTiny = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP', maximumSignificantDigits: 4 });
 
 export function money(value: number | null, opts: { round?: boolean } = {}): string {
   if (value === null || Number.isNaN(value)) return '—';
   if (opts.round) return gbp0.format(value);
-  return Math.abs(value) < 10 ? gbp4.format(value) : gbp2.format(value);
+  const size = Math.abs(value);
+  if (size >= 10) return gbp2.format(value);
+  if (size >= 0.01 || size === 0) return gbp4.format(value);
+  return gbpTiny.format(value);
 }
 
 export function signedMoney(value: number | null): string {

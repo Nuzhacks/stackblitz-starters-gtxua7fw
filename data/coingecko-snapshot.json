@@ -227,6 +227,42 @@
       "totalProfitLoss": -73.79,
       "totalProfitLossPct": -85.4,
       "impliedPrice": 0.107848
+    },
+    "BASE": {
+      "holdings": 21131953.523,
+      "holdingsValue": 11.96,
+      "totalCost": 251.01,
+      "averageNetCost": 1.18783e-05,
+      "totalProfitLoss": -239.05,
+      "totalProfitLossPct": -95.2,
+      "impliedPrice": 5.6597e-07
+    },
+    "ATOM": {
+      "holdings": 10,
+      "holdingsValue": 11.55,
+      "totalCost": 169.52,
+      "averageNetCost": 16.95,
+      "totalProfitLoss": -157.96,
+      "totalProfitLossPct": -93.2,
+      "impliedPrice": 1.155
+    },
+    "EWT": {
+      "holdings": 45.67953,
+      "holdingsValue": 9.32,
+      "totalCost": 392.32,
+      "averageNetCost": 8.59,
+      "totalProfitLoss": -383.01,
+      "totalProfitLossPct": -97.6,
+      "impliedPrice": 0.204029
+    },
+    "XTZ": {
+      "holdings": 49.38,
+      "holdingsValue": 8.69,
+      "totalCost": 171.64,
+      "averageNetCost": 3.48,
+      "totalProfitLoss": -162.94,
+      "totalProfitLossPct": -94.9,
+      "impliedPrice": 0.175982
     }
   }
 }

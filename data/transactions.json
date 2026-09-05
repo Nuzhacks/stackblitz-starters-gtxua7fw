@@ -3,7 +3,7 @@
   "baseCurrency": "GBP",
   "lastImportedAt": "2026-09-05",
   "sources": [
-    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-22:20"
+    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-22:55"
   ],
   "assets": [
     {
@@ -970,6 +970,77 @@
           "qty": 116.46,
           "cost": 86.3574,
           "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "BASE",
+      "name": "Base",
+      "coingeckoId": "base",
+      "colour": "#0052ff",
+      "transactions": [
+        {
+          "date": "2024-12-07",
+          "type": "buy",
+          "qty": 21131953.523,
+          "cost": 251.012,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "ATOM",
+      "name": "Cosmos Hub",
+      "coingeckoId": "cosmos",
+      "colour": "#6f7390",
+      "transactions": [
+        {
+          "date": "2021-03-03",
+          "type": "buy",
+          "qty": 10.0,
+          "cost": 236.2,
+          "currency": "USD",
+          "fxToGbp": 1.393346,
+          "costGbp": 169.52
+        }
+      ]
+    },
+    {
+      "symbol": "EWT",
+      "name": "Energy Web Token",
+      "coingeckoId": "energy-web-token",
+      "colour": "#a566ff",
+      "transactions": [
+        {
+          "date": "2021-05-23",
+          "type": "buy",
+          "qty": 16.32,
+          "cost": 86.8672,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-04-25",
+          "type": "buy",
+          "qty": 29.35953,
+          "cost": 305.458,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "XTZ",
+      "name": "Tezos",
+      "coingeckoId": "tezos",
+      "colour": "#2c7df7",
+      "transactions": [
+        {
+          "date": "2021-03-03",
+          "type": "buy",
+          "qty": 49.38,
+          "cost": 238.999,
+          "currency": "USD",
+          "fxToGbp": 1.392444,
+          "costGbp": 171.64
         }
       ]
     }
