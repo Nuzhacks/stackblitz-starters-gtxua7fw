@@ -23,6 +23,14 @@ export function qty(value: number, symbol?: string): string {
   return symbol ? `${formatted} ${symbol}` : formatted;
 }
 
+const CURRENCY_SYMBOLS: Record<string, string> = { USD: '$', EUR: '\u20ac', GBP: '\u00a3' };
+
+/** The amount as originally recorded, for transactions not priced in GBP. */
+export function originalAmount(cost: number, currency: string): string {
+  const symbol = CURRENCY_SYMBOLS[currency] ?? `${currency} `;
+  return `${symbol}${cost.toLocaleString('en-GB', { maximumFractionDigits: 4 })}`;
+}
+
 export function shortDate(iso: string): string {
   const d = new Date(`${iso}T00:00:00Z`);
   if (Number.isNaN(d.getTime())) return iso;

@@ -10,7 +10,7 @@ import type {
 /** GBP value of a transaction, converting USD amounts where needed. */
 export function costInGbp(tx: Transaction): number {
   if (typeof tx.costGbp === 'number') return tx.costGbp;
-  if (tx.currency === 'USD' && tx.fxToGbp) return tx.cost / tx.fxToGbp;
+  if (tx.currency !== 'GBP' && tx.fxToGbp) return tx.cost / tx.fxToGbp;
   return tx.cost;
 }
 

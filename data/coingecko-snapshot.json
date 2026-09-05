@@ -119,6 +119,51 @@
       "totalProfitLoss": -918.84,
       "totalProfitLossPct": -84.0,
       "impliedPrice": 0.279368
+    },
+    "ADA": {
+      "holdings": 739.88,
+      "holdingsValue": 119.94,
+      "totalCost": 432.43,
+      "averageNetCost": 0.584464,
+      "totalProfitLoss": -312.49,
+      "totalProfitLossPct": -72.3,
+      "impliedPrice": 0.162107
+    },
+    "ICP": {
+      "holdings": 54.928,
+      "holdingsValue": 108.18,
+      "totalCost": 201.2,
+      "averageNetCost": 3.66,
+      "totalProfitLoss": -93.02,
+      "totalProfitLossPct": -46.2,
+      "impliedPrice": 1.969481
+    },
+    "XLM": {
+      "holdings": 768.2521266,
+      "holdingsValue": 104.89,
+      "totalCost": 203.79,
+      "averageNetCost": 0.265265,
+      "totalProfitLoss": -98.9,
+      "totalProfitLossPct": -48.5,
+      "impliedPrice": 0.136531
+    },
+    "DOT": {
+      "holdings": 100.58019067,
+      "holdingsValue": 67.98,
+      "totalCost": 1717.24,
+      "averageNetCost": 17.07,
+      "totalProfitLoss": -1649.26,
+      "totalProfitLossPct": -96.0,
+      "impliedPrice": 0.675883
+    },
+    "FIDA": {
+      "holdings": 2748.73471447,
+      "holdingsValue": 39.52,
+      "totalCost": 506.04,
+      "averageNetCost": 0.184099,
+      "totalProfitLoss": -466.52,
+      "totalProfitLossPct": -92.2,
+      "impliedPrice": 0.014378
     }
   }
 }

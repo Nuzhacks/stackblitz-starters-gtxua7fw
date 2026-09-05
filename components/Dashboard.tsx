@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { PortfolioData, PriceMap } from '@/lib/types';
 import { buildSummary, costInGbp } from '@/lib/portfolio';
-import { money, pct, qty as fmtQty, shortDate, signedMoney, timeAgo } from '@/lib/format';
+import { money, originalAmount, pct, qty as fmtQty, shortDate, signedMoney, timeAgo } from '@/lib/format';
 import { evaluateAlert, loadAlerts, saveAlerts, trackPeaks, type Alert } from '@/lib/alerts';
 import AlertsPanel from './AlertsPanel';
 
@@ -292,9 +292,9 @@ export default function Dashboard({ data }: { data: PortfolioData }) {
                                 </td>
                                 <td className="py-1.5 text-right text-slate-300">
                                   {gbpCost ? money(gbpCost) : '\u2014'}
-                                  {tx.currency === 'USD' && (
+                                  {tx.currency !== 'GBP' && (
                                     <span className="ml-1 text-slate-500">
-                                      (${tx.cost.toLocaleString('en-GB')})
+                                      ({originalAmount(tx.cost, tx.currency)})
                                     </span>
                                   )}
                                 </td>

@@ -3,7 +3,7 @@
   "baseCurrency": "GBP",
   "lastImportedAt": "2026-09-05",
   "sources": [
-    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-22:11"
+    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-22:18"
   ],
   "assets": [
     {
@@ -606,6 +606,177 @@
           "currency": "USD",
           "fxToGbp": 1.37624,
           "costGbp": 993.24
+        }
+      ]
+    },
+    {
+      "symbol": "ADA",
+      "name": "Cardano",
+      "coingeckoId": "cardano",
+      "colour": "#0033ad",
+      "transactions": [
+        {
+          "date": "2025-01-11",
+          "type": "transfer_in",
+          "qty": 21.85,
+          "cost": 0,
+          "currency": "GBP",
+          "note": "Transferred in - no cost recorded"
+        },
+        {
+          "date": "2023-12-08",
+          "type": "buy",
+          "qty": 52.0,
+          "cost": 0,
+          "currency": "GBP",
+          "note": "Recorded with £0 cost in CoinGecko"
+        },
+        {
+          "date": "2021-05-03",
+          "type": "buy",
+          "qty": 5.0,
+          "cost": 4.85,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-03-03",
+          "type": "buy",
+          "qty": 196.43,
+          "cost": 176.787,
+          "currency": "USD",
+          "fxToGbp": 1.39817,
+          "costGbp": 126.44
+        },
+        {
+          "date": "2021-03-03",
+          "type": "buy",
+          "qty": 145.0,
+          "cost": 133.4,
+          "currency": "USD",
+          "fxToGbp": 1.39817,
+          "costGbp": 95.41
+        },
+        {
+          "date": "2021-03-03",
+          "type": "buy",
+          "qty": 319.6,
+          "cost": 287.64,
+          "currency": "USD",
+          "fxToGbp": 1.39817,
+          "costGbp": 205.73
+        }
+      ]
+    },
+    {
+      "symbol": "ICP",
+      "name": "Internet Computer",
+      "coingeckoId": "internet-computer",
+      "colour": "#f15a24",
+      "transactions": [
+        {
+          "date": "2026-03-07",
+          "type": "buy",
+          "qty": 52.38,
+          "cost": 101,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-11-09",
+          "type": "buy",
+          "qty": 2.548,
+          "cost": 100.203,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "XLM",
+      "name": "Stellar",
+      "coingeckoId": "stellar",
+      "colour": "#94a3b8",
+      "transactions": [
+        {
+          "date": "2021-02-05",
+          "type": "buy",
+          "qty": 768.2521266,
+          "cost": 280.781,
+          "currency": "USD",
+          "fxToGbp": 1.37779,
+          "costGbp": 203.79
+        }
+      ]
+    },
+    {
+      "symbol": "DOT",
+      "name": "Polkadot",
+      "coingeckoId": "polkadot",
+      "colour": "#e6007a",
+      "transactions": [
+        {
+          "date": "2024-11-09",
+          "type": "transfer_in",
+          "qty": 17.99,
+          "cost": 0,
+          "currency": "GBP",
+          "note": "Transferred in - no cost recorded"
+        },
+        {
+          "date": "2021-09-12",
+          "type": "buy",
+          "qty": 4.34,
+          "cost": 98.6482,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-05-23",
+          "type": "buy",
+          "qty": 10.8,
+          "cost": 125.636,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-03-21",
+          "type": "buy",
+          "qty": 33.53019067,
+          "cost": 1109.84,
+          "currency": "EUR",
+          "fxToGbp": 1.16019,
+          "costGbp": 956.6
+        },
+        {
+          "date": "2021-03-03",
+          "type": "buy",
+          "qty": 19.0,
+          "cost": 494,
+          "currency": "USD",
+          "fxToGbp": 1.38,
+          "costGbp": 357.97
+        },
+        {
+          "date": "2021-02-02",
+          "type": "buy",
+          "qty": 14.92,
+          "cost": 246.18,
+          "currency": "USD",
+          "fxToGbp": 1.38,
+          "costGbp": 178.39
+        }
+      ]
+    },
+    {
+      "symbol": "FIDA",
+      "name": "Bonfida",
+      "coingeckoId": "bonfida",
+      "colour": "#a78bfa",
+      "transactions": [
+        {
+          "date": "2025-01-11",
+          "type": "buy",
+          "qty": 2748.73471447,
+          "cost": 617.689,
+          "currency": "USD",
+          "fxToGbp": 1.22063,
+          "costGbp": 506.04
         }
       ]
     }

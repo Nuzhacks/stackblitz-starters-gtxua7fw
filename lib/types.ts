@@ -5,8 +5,8 @@ export interface Transaction {
   type: TxType;
   qty: number;
   cost: number;
-  currency: 'GBP' | 'USD';
-  /** USD -> GBP rate used for this transaction, when currency is USD. */
+  currency: 'GBP' | 'USD' | 'EUR';
+  /** Rate back to GBP for this transaction, when currency is not GBP. */
   fxToGbp?: number;
   /** Pre-converted GBP amount, used in preference to cost/fxToGbp when present. */
   costGbp?: number;

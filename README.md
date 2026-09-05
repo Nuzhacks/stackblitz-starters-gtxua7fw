@@ -60,12 +60,12 @@ entry to the right asset and the dashboard recalculates:
 
 - `type` is `buy`, `sell`, `transfer_in` or `transfer_out`
 - `cost` is the total amount, not the unit price
-- For a USD amount, add `"currency": "USD"` and either `"fxToGbp": 1.27` or a
-  pre-converted `"costGbp": 196.85`
+- For a USD or EUR amount, add `"currency": "USD"` (or `"EUR"`) and either
+  `"fxToGbp": 1.27` or a pre-converted `"costGbp": 196.85`
 - Transfers move quantity without affecting cost basis
 
 To track a new coin, add an asset block with its CoinGecko id (the last part of its
-coingecko.com URL, e.g. `cardano`). Thirteen are tracked today: BTC, ETH, LINK, SOL, XRP, UNI, SUI, FIL, AAVE, RENDER, KAS, GRT and CRV.
+coingecko.com URL, e.g. `cardano`). Eighteen are tracked today.
 
 [`PORTFOLIO.md`](PORTFOLIO.md) is the human-readable copy of the same history, including
 what is missing or uncertain in it.
