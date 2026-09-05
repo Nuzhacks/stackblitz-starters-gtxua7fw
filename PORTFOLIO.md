@@ -1,6 +1,6 @@
 # Portfolio record
 
-Transcribed from CoinGecko app screenshots taken on 5 September 2026 (22:09–22:55).
+Transcribed from CoinGecko app screenshots taken on 5 September 2026 (22:09–23:01).
 The machine-readable source of truth is [`data/transactions.json`](data/transactions.json);
 this file is the human-readable copy, generated from it.
 
@@ -41,21 +41,27 @@ showed dates only, no times of day.**
 | ATOM Cosmos Hub | 10 | £11.55 | £169.52 | — | £16.95 | −£157.97 (-93.2%) | 1 |
 | EWT Energy Web Token | 45.67953 | £9.32 | £392.33 | — | £8.5886 | −£383.01 (-97.6%) | 2 |
 | XTZ Tezos | 49.38 | £8.69 | £171.64 | — | £3.4759 | −£162.95 (-94.9%) | 1 |
-| **Total** | | **£44,440.01** | **£39,002.98** | **£1,100.49** | | **+£6,537.53 (+16.8%)** | **105** |
+| SNX Synthetix | 24.479 | £3.96 | £286.38 | £5.03 | £11.49 | −£277.39 (-96.9%) | 3 |
+| SUSHI Sushi | 18.68 | £3.60 | £150.00 | — | £8.0301 | −£146.40 (-97.6%) | 1 |
+| GALA GALA | 2,429 | £3.43 | £99.61 | — | £0.0410 | −£96.18 (-96.6%) | 1 |
+| VSP Vesper Finance | 44.86067 | £3.05 | £432.36 | — | £9.6379 | −£429.31 (-99.3%) | 1 |
+| FTM Fantom | 91.95 | £1.91 | £125.10 | — | £1.3605 | −£123.19 (-98.5%) | 2 |
+| **Total** | | **£44,455.96** | **£40,096.44** | **£1,105.53** | | **+£5,465.05 (+13.6%)** | **113** |
 
-Twenty-nine assets, 105 transactions. **Twenty-four of the twenty-nine are underwater**,
-together about £13,711 of loss against £20,248 of gains.
+Thirty-four assets, 113 transactions. **Twenty-nine of the thirty-four are underwater**,
+together about £14,783 of loss against £20,248 of gains.
 
 Only five positions are up: BTC, ETH, SOL, XRP and UNI. BTC and ETH alone are 67% of
 portfolio value and, with the other three, the whole of the gain.
 
-Worst by percentage: FLOW (−98%), EWT (−98%), KSM (−98%), OMI (−97%), DOT (−96%).
+Worst by percentage: VSP (−99%), FTM (−98%), FLOW (−98%), EWT (−98%), KSM (−98%),
+SUSHI (−98%).
 Worst in money: FIL (−£2,452), DOT (−£1,649), SUI (−£1,246), FLOW (−£972), CRV (−£919).
 
-**Eighteen positions are worth under £250 each. Together they hold £1,008 against £9,288
-invested** — 89% of the money in that tail is gone. Break-even on most needs a move of
-5x or more, and at these sizes fees and spreads take a real bite out of anything
-recovered.
+**Twenty-three positions are worth under £250 each. Together they hold £1,024 against
+£10,382 invested** — 90% of the money in that tail is gone, and fifteen of those
+positions are now worth under £30 each. Break-even on most needs a move of 5x or more,
+and at these sizes fees and spreads take a real bite out of anything recovered.
 
 ## Transactions by asset
 ## BTC — Bitcoin
@@ -308,6 +314,39 @@ recovered.
 |---|---|---:|---:|---:|
 | 3 Mar 2021 | Buy | +49.38 | £171.64 ($238.999) | £3.4759 |
 
+## SNX — Synthetix
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 29 May 2021 | Buy | +10.79 | £86.75 | £8.0397 |
+| 3 May 2021 | Sell | −0.379 | £5.03 | £13.28 |
+| 12 Mar 2021 | Buy | +14.068 | £199.63 | £14.19 |
+
+## SUSHI — Sushi
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 7 Oct 2021 | Buy | +18.68 | £150.00 | £8.0301 |
+
+## GALA — GALA
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 24 Sep 2022 | Buy | +2,429 | £99.61 | £0.0410 |
+
+## VSP — Vesper Finance
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 17 Sep 2021 | Buy | +44.86067 | £432.36 | £9.6379 |
+
+## FTM — Fantom
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 4 Dec 2021 | Buy | +44.95 | £55.14 | £1.2267 |
+| 18 Nov 2021 | Buy | +47 | £69.96 | £1.4885 |
+
 ## How the numbers are calculated
 
 The dashboard follows CoinGecko's own conventions so figures reconcile with the app the
@@ -320,7 +359,7 @@ data came from:
 - Transfers move quantity without touching cost or proceeds
 
 Verified: computed holdings, total cost, average net cost and profit match the CoinGecko
-figures for all twenty-nine assets (see `data/coingecko-snapshot.json`). A few profit
+figures for all thirty-four assets (see `data/coingecko-snapshot.json`). A few profit
 percentages differ in the first decimal place — UNI, OMI and OCEAN — because CoinGecko
 rounds its displayed value and holdings before dividing. The largest such gap is worth
 about 6p in 100.
@@ -351,9 +390,11 @@ screenshots matched to within a fraction of a percent on every asset.
    - **OMI** spans two dates with no corroboration available, so its two dollar buys use
      rates in the real market's proportion for 18 March and 2 April 2021 (1.3932 and
      1.3832), scaled slightly so the total reconciles.
-4. **BASE identification** — the ticker BASE belongs to four different tokens on
-   CoinGecko. The one held here is the coin with id `base`, identified by matching the
-   screenshot's implied price of about £0.00000057 against all four candidates; it agreed
-   to within 0.04% and no other was within a factor of 4,000.
-5. **Possible missing assets** — twenty-nine were captured. Add more as screenshots
+4. **Ambiguous tickers** — two needed identifying beyond the symbol shown on screen:
+   - **BASE** belongs to four different CoinGecko tokens. The one held here is id `base`,
+     matched by price: it agreed with the screenshot to within 0.04% and no other
+     candidate was within a factor of 4,000.
+   - **SNX** resolves under CoinGecko's legacy id `havven`, not
+     `synthetix-network-token`, which does not resolve.
+5. **Possible missing assets** — thirty-four were captured. Add more as screenshots
    arrive.

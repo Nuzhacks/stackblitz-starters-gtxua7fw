@@ -263,6 +263,51 @@
       "totalProfitLoss": -162.94,
       "totalProfitLossPct": -94.9,
       "impliedPrice": 0.175982
+    },
+    "SNX": {
+      "holdings": 24.479,
+      "holdingsValue": 3.96,
+      "totalCost": 286.38,
+      "averageNetCost": 11.49,
+      "totalProfitLoss": -277.38,
+      "totalProfitLossPct": -96.9,
+      "impliedPrice": 0.161771
+    },
+    "SUSHI": {
+      "holdings": 18.68,
+      "holdingsValue": 3.6,
+      "totalCost": 150.0,
+      "averageNetCost": 8.03,
+      "totalProfitLoss": -146.41,
+      "totalProfitLossPct": -97.6,
+      "impliedPrice": 0.192719
+    },
+    "GALA": {
+      "holdings": 2429,
+      "holdingsValue": 3.43,
+      "totalCost": 99.61,
+      "averageNetCost": 0.04101046,
+      "totalProfitLoss": -96.19,
+      "totalProfitLossPct": -96.6,
+      "impliedPrice": 0.00141211
+    },
+    "VSP": {
+      "holdings": 44.86067,
+      "holdingsValue": 3.05,
+      "totalCost": 432.36,
+      "averageNetCost": 9.64,
+      "totalProfitLoss": -429.31,
+      "totalProfitLossPct": -99.3,
+      "impliedPrice": 0.06798823
+    },
+    "FTM": {
+      "holdings": 91.95,
+      "holdingsValue": 1.91,
+      "totalCost": 125.1,
+      "averageNetCost": 1.36,
+      "totalProfitLoss": -123.19,
+      "totalProfitLossPct": -98.5,
+      "impliedPrice": 0.02077216
     }
   }
 }

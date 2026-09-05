@@ -3,7 +3,7 @@
   "baseCurrency": "GBP",
   "lastImportedAt": "2026-09-05",
   "sources": [
-    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-22:55"
+    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-23:01"
   ],
   "assets": [
     {
@@ -1041,6 +1041,102 @@
           "currency": "USD",
           "fxToGbp": 1.392444,
           "costGbp": 171.64
+        }
+      ]
+    },
+    {
+      "symbol": "SNX",
+      "name": "Synthetix",
+      "coingeckoId": "havven",
+      "colour": "#00d1ff",
+      "transactions": [
+        {
+          "date": "2021-05-29",
+          "type": "buy",
+          "qty": 10.79,
+          "cost": 86.7487,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-05-03",
+          "type": "sell",
+          "qty": 0.379,
+          "cost": 5.03312,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-03-12",
+          "type": "buy",
+          "qty": 14.068,
+          "cost": 199.63,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "SUSHI",
+      "name": "Sushi",
+      "coingeckoId": "sushi",
+      "colour": "#fa52a0",
+      "transactions": [
+        {
+          "date": "2021-10-07",
+          "type": "buy",
+          "qty": 18.68,
+          "cost": 150.003,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "GALA",
+      "name": "GALA",
+      "coingeckoId": "gala",
+      "colour": "#f0b90b",
+      "transactions": [
+        {
+          "date": "2022-09-24",
+          "type": "buy",
+          "qty": 2429.0,
+          "cost": 99.6144,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "VSP",
+      "name": "Vesper Finance",
+      "coingeckoId": "vesper-finance",
+      "colour": "#4f46e5",
+      "transactions": [
+        {
+          "date": "2021-09-17",
+          "type": "buy",
+          "qty": 44.86067,
+          "cost": 432.363,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "FTM",
+      "name": "Fantom",
+      "coingeckoId": "fantom",
+      "colour": "#1969ff",
+      "transactions": [
+        {
+          "date": "2021-12-04",
+          "type": "buy",
+          "qty": 44.95,
+          "cost": 55.142,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-11-18",
+          "type": "buy",
+          "qty": 47.0,
+          "cost": 69.96,
+          "currency": "GBP"
         }
       ]
     }
