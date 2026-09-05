@@ -209,6 +209,24 @@
       "totalProfitLoss": -753.53,
       "totalProfitLossPct": -97.8,
       "impliedPrice": 2.759313
+    },
+    "OMI": {
+      "holdings": 75687,
+      "holdingsValue": 13.12,
+      "totalCost": 461.38,
+      "averageNetCost": 0.0060954,
+      "totalProfitLoss": -448.23,
+      "totalProfitLossPct": -97.2,
+      "impliedPrice": 0.000173343
+    },
+    "OCEAN": {
+      "holdings": 116.46,
+      "holdingsValue": 12.56,
+      "totalCost": 86.36,
+      "averageNetCost": 0.74152,
+      "totalProfitLoss": -73.79,
+      "totalProfitLossPct": -85.4,
+      "impliedPrice": 0.107848
     }
   }
 }

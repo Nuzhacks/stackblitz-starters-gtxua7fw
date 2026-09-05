@@ -3,7 +3,7 @@
   "baseCurrency": "GBP",
   "lastImportedAt": "2026-09-05",
   "sources": [
-    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-22:19"
+    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-22:20"
   ],
   "assets": [
     {
@@ -915,6 +915,61 @@
           "currency": "USD",
           "fxToGbp": 1.42326,
           "costGbp": 710.11
+        }
+      ]
+    },
+    {
+      "symbol": "OMI",
+      "name": "ECOMI",
+      "coingeckoId": "ecomi",
+      "colour": "#f97316",
+      "transactions": [
+        {
+          "date": "2021-08-23",
+          "type": "sell",
+          "qty": 20.0,
+          "cost": 0.04088,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-04-16",
+          "type": "buy",
+          "qty": 52013.0,
+          "cost": 300.972,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-04-02",
+          "type": "buy",
+          "qty": 11766.0,
+          "cost": 116.482,
+          "currency": "USD",
+          "fxToGbp": 1.383216,
+          "costGbp": 84.21
+        },
+        {
+          "date": "2021-03-18",
+          "type": "buy",
+          "qty": 11928.0,
+          "cost": 106.159,
+          "currency": "USD",
+          "fxToGbp": 1.393217,
+          "costGbp": 76.2
+        }
+      ]
+    },
+    {
+      "symbol": "OCEAN",
+      "name": "Ocean Protocol",
+      "coingeckoId": "ocean-protocol",
+      "colour": "#f8fafc",
+      "transactions": [
+        {
+          "date": "2021-08-23",
+          "type": "buy",
+          "qty": 116.46,
+          "cost": 86.3574,
+          "currency": "GBP"
         }
       ]
     }

@@ -1,6 +1,6 @@
 # Portfolio record
 
-Transcribed from CoinGecko app screenshots taken on 5 September 2026 (22:09–22:19).
+Transcribed from CoinGecko app screenshots taken on 5 September 2026 (22:09–22:20).
 The machine-readable source of truth is [`data/transactions.json`](data/transactions.json);
 this file is the human-readable copy, generated from it.
 
@@ -35,19 +35,23 @@ showed dates only, no times of day.**
 | COMP Compound | 1.4 | £21.06 | £271.24 | — | £193.74 | −£250.18 (-92.2%) | 3 |
 | FLOW Flow | 826.2 | £17.60 | £989.61 | — | £1.1978 | −£972.01 (-98.2%) | 3 |
 | KSM Kusama | 6.01252365 | £16.59 | £770.13 | — | £128.09 | −£753.54 (-97.8%) | 2 |
-| **Total** | | **£44,372.81** | **£37,470.74** | **£1,100.45** | | **+£8,002.52 (+21.4%)** | **95** |
+| OMI ECOMI | 75,687 | £13.12 | £461.38 | £0.04 | £0.0061 | −£448.22 (-97.1%) | 4 |
+| OCEAN Ocean Protocol | 116.46 | £12.56 | £86.36 | — | £0.7415 | −£73.80 (-85.5%) | 1 |
+| **Total** | | **£44,398.49** | **£38,018.48** | **£1,100.49** | | **+£7,480.51 (+19.7%)** | **100** |
 
-Twenty-three assets, 95 transactions. **Eighteen of the twenty-three are underwater**,
-together about £12,246 of loss against £20,248 of gains.
+Twenty-five assets, 100 transactions. **Twenty of the twenty-five are underwater**,
+together about £12,768 of loss against £20,248 of gains.
 
 Only five positions are up: BTC, ETH, SOL, XRP and UNI. BTC and ETH alone are 68% of
 portfolio value and, with the other three, the whole of the gain.
 
-Worst by percentage: FLOW (−98%), KSM (−98%), DOT (−96%), VET (−95%).
-Worst in money: FIL (−£2,452), DOT (−£1,649), SUI (−£1,246), FLOW (−£972).
+Worst by percentage: FLOW (−98%), KSM (−98%), OMI (−97%), DOT (−96%), VET (−95%).
+Worst in money: FIL (−£2,452), DOT (−£1,649), SUI (−£1,246), FLOW (−£972), CRV (−£919).
 
-Eleven positions are now worth under £250 each; together they hold £1,013 against
-£6,410 invested.
+**Fourteen positions are worth under £250 each. Together they hold £966 against £8,304
+invested** — 88% of the money in that tail is gone. Break-even on most of them needs a
+move of 5x or more, and at these sizes fees and spreads take a real bite out of anything
+recovered.
 
 ## Transactions by asset
 ## BTC — Bitcoin
@@ -260,6 +264,21 @@ Eleven positions are now worth under £250 each; together they hold £1,013 agai
 | 21 Jan 2023 | Buy | +2 | £60.02 | £30.01 |
 | 23 Feb 2021 | Buy | +4.01252365 | £710.11 ($1,010.67) | £176.97 |
 
+## OMI — ECOMI
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 23 Aug 2021 | Sell | −20 | £0.04 | £0.0020 |
+| 16 Apr 2021 | Buy | +52,013 | £300.97 | £0.0058 |
+| 2 Apr 2021 | Buy | +11,766 | £84.21 ($116.482) | £0.0072 |
+| 18 Mar 2021 | Buy | +11,928 | £76.20 ($106.159) | £0.0064 |
+
+## OCEAN — Ocean Protocol
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 23 Aug 2021 | Buy | +116.46 | £86.36 | £0.7415 |
+
 ## How the numbers are calculated
 
 The dashboard follows CoinGecko's own conventions so figures reconcile with the app the
@@ -271,10 +290,11 @@ data came from:
 - **Profit / loss %** = profit / loss ÷ total cost
 - Transfers move quantity without touching cost or proceeds
 
-Verified: computed holdings, total cost, average net cost, profit and profit % match the
-CoinGecko figures for all twenty-three assets (see `data/coingecko-snapshot.json`). The
-only difference anywhere is UNI's profit percentage, where CoinGecko displays 39.6% and
-this calculation gives 39.5% — a rounding artefact on a £1.50 sale, worth 5p in 100.
+Verified: computed holdings, total cost, average net cost and profit match the CoinGecko
+figures for all twenty-five assets (see `data/coingecko-snapshot.json`). A few profit
+percentages differ in the first decimal place — UNI, OMI and OCEAN — because CoinGecko
+rounds its displayed value and holdings before dividing. The largest such gap is worth
+about 6p in 100.
 
 Cross-checked against live CoinGecko prices on import day: the prices implied by the
 screenshots matched to within a fraction of a percent on every asset.
@@ -286,7 +306,7 @@ screenshots matched to within a fraction of a percent on every asset.
    (8 Dec 2023) are recorded with £0 cost, and the transfers in on SOL, ADA and DOT carry
    no cost either. All flatter the average cost on those positions. Worth correcting if
    the real prices are known.
-3. **Foreign-currency conversions** — twenty-three transactions were priced in USD and one
+3. **Foreign-currency conversions** — twenty-five transactions were priced in USD and one
    in EUR. Each rate is chosen so its asset's total reconciles exactly with CoinGecko's
    own total. Where several assets share a purchase date, the rate is cross-checked
    between them, which pins it down independently:
@@ -296,8 +316,11 @@ screenshots matched to within a fraction of a percent on every asset.
    - **3 Mar 2021** — UNI 1.3951, VET 1.3916, FLOW 1.3974 and ADA 1.3982 agree closely;
      1.3956 is used for DOT.
    - **2 Feb 2021** — LINK implies 1.3586, also used for DOT.
-   - Remaining single-transaction rates: FIL 1.2461, RENDER 1.2446, KAS 1.2212,
-     CRV 1.3762, XLM 1.3778, FIDA 1.2206, ETH 1.3475 (8 Jan 2021), XRP 1.3440
-     (22 Dec 2020), and DOT's euro buy at 1.1588.
-4. **Possible missing assets** — twenty-three were captured. Add more as screenshots
+   - Single-transaction rates: FIL 1.2461, RENDER 1.2446, KAS 1.2212, CRV 1.3762,
+     XLM 1.3778, FIDA 1.2206, ETH 1.3475 (8 Jan 2021), XRP 1.3440 (22 Dec 2020), and
+     DOT's euro buy at 1.1588.
+   - **OMI** spans two dates with no corroboration available, so its two dollar buys use
+     rates in the real market's proportion for 18 March and 2 April 2021 (1.3932 and
+     1.3832), scaled slightly so the total reconciles.
+4. **Possible missing assets** — twenty-five were captured. Add more as screenshots
    arrive.
