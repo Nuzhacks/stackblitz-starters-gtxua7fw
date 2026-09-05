@@ -450,6 +450,51 @@ cannot be sold for a net gain at any plausible price.
 |---|---|---:|---:|---:|
 | Date unknown | Buy | +1,730.95 | £250.00 | £0.1444 |
 
+## Reconciliation against CoinGecko's portfolio overview
+
+CoinGecko's own overview screen was captured at 23:53, 26 minutes after the per-coin
+cards. It reports:
+
+| | CoinGecko overview | This record |
+|---|---:|---:|
+| Portfolio value | £44,520.77 | £44,462.56 |
+| Total profit / loss | +£2,325.61 (+5.37%) | +£3,199.33 (+7.55%) |
+| Implied net cost | £42,195.16 | £41,263.23 |
+| Implied total cost | £43,300.69 | £42,368.75 |
+
+**The value agrees.** The £58 difference is 0.13%, which is 26 minutes of price movement.
+Every holding visible on the overview matches this record exactly, and each price differs
+by less than half a percent:
+
+| | Holdings | Price drift |
+|---|---|---:|
+| BTC | 0.308712, matches | +0.08% |
+| ETH | 6.419, matches | +0.13% |
+| LINK | 375.503, matches | −0.08% |
+| SOL | 35.011, matches | −0.01% |
+| XRP | 2,524.62, matches | +0.15% |
+| UNI | 236.215, matches | −0.39% |
+| SUI | 1,700.38, matches | −0.41% |
+| FIL | 1,395.95, matches | −0.09% |
+| AAVE | 7.039, matches | +0.37% |
+
+**The cost basis does not agree.** CoinGecko's implied total cost is about £932 higher
+than this record, or about £1,432 higher if CoinGecko assigns no cost to $COFFEE and BLOK
+— which its overview suggests, since it shows no profit figure for either.
+
+Both use the same convention: CoinGecko's 5.37% is £2,325.61 ÷ £43,300.69, the same
+profit-over-total-cost formula used throughout this record, so the two are directly
+comparable and the gap is real rather than a difference in method.
+
+Since the value side agrees, whatever is missing is worth close to nothing but cost
+roughly £1,400. That fits the pattern of the tail: positions bought for a few hundred
+pounds now worth pennies would add cost without adding value. The likeliest explanation
+is coins further down the holdings list that have not yet been captured.
+
+Until that gap is closed, **this record slightly overstates the return** — +7.6% here
+against CoinGecko's +5.4% — because it is dividing a similar profit by a smaller cost
+base. CoinGecko's figure is the more reliable of the two on this point.
+
 ## How the numbers are calculated
 
 The dashboard follows CoinGecko's own conventions so figures reconcile with the app the

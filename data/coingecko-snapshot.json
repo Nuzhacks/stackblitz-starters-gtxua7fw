@@ -2,6 +2,28 @@
   "$comment": "Figures CoinGecko displayed at import time. Used only to verify the dashboard's own calculations reconcile. Not used for live pricing.",
   "capturedAt": "2026-09-05T22:09:00Z",
   "currency": "GBP",
+  "portfolioOverview": {
+    "$note": "CoinGecko's own portfolio overview screen, captured 23:53 - 26 minutes after the per-coin cards. Used to check the record is complete, not to feed the dashboard.",
+    "capturedAt": "2026-09-05T23:53:00Z",
+    "totalValue": 44520.77,
+    "change24h": 742.42,
+    "change24hPct": 1.7,
+    "totalProfitLoss": 2325.61,
+    "totalProfitLossPct": 5.37,
+    "impliedNetCost": 42195.16,
+    "impliedTotalCost": 43300.69,
+    "visiblePrices": {
+      "BTC": 59047.73,
+      "ETH": 1835.37,
+      "LINK": 8.88,
+      "SOL": 76.48,
+      "XRP": 1.05,
+      "UNI": 5.23,
+      "SUI": 0.590863,
+      "FIL": 0.584724,
+      "AAVE": 99.14
+    }
+  },
   "assets": {
     "BTC": {
       "holdings": 0.30871163,
