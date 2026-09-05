@@ -12,12 +12,50 @@
       "coingeckoId": "bitcoin",
       "colour": "#f7931a",
       "transactions": [
-        { "date": "2023-12-20", "type": "buy",  "qty": 0.02892,    "cost": 1000.61,  "currency": "GBP" },
-        { "date": "2023-12-09", "type": "buy",  "qty": 0.09682669, "cost": 1336.01,  "currency": "GBP" },
-        { "date": "2021-07-31", "type": "sell", "qty": 0.03582,    "cost": 1065.71,  "currency": "GBP" },
-        { "date": "2021-07-27", "type": "buy",  "qty": 0.03564125, "cost": 999.982,  "currency": "GBP" },
-        { "date": "2021-05-16", "type": "buy",  "qty": 0.0311135,  "cost": 1005.28,  "currency": "GBP" },
-        { "date": "2021-02-23", "type": "buy",  "qty": 0.15203019, "cost": 7044.77,  "currency": "USD", "fxToGbp": 1.424181, "costGbp": 4946.56 }
+        {
+          "date": "2023-12-20",
+          "type": "buy",
+          "qty": 0.02892,
+          "cost": 1000.61,
+          "currency": "GBP"
+        },
+        {
+          "date": "2023-12-09",
+          "type": "buy",
+          "qty": 0.09682669,
+          "cost": 1336.01,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-07-31",
+          "type": "sell",
+          "qty": 0.03582,
+          "cost": 1065.71,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-07-27",
+          "type": "buy",
+          "qty": 0.03564125,
+          "cost": 999.982,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-05-16",
+          "type": "buy",
+          "qty": 0.0311135,
+          "cost": 1005.28,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-02-23",
+          "type": "buy",
+          "qty": 0.15203019,
+          "cost": 7044.77,
+          "currency": "USD",
+          "fxToGbp": 1.424181,
+          "costGbp": 4946.56
+        }
       ]
     },
     {
@@ -26,13 +64,63 @@
       "coingeckoId": "ethereum",
       "colour": "#8a92b2",
       "transactions": [
-        { "date": "2024-11-11", "type": "transfer_out", "qty": 0.09,        "cost": 0,        "currency": "GBP", "note": "Moved off exchange - no proceeds" },
-        { "date": "2022-06-14", "type": "buy",          "qty": 1.50337882, "cost": 1498.69,  "currency": "GBP" },
-        { "date": "2021-12-09", "type": "buy",          "qty": 1.31,       "cost": 0,        "currency": "GBP", "note": "Recorded with £0 cost in CoinGecko" },
-        { "date": "2021-04-01", "type": "buy",          "qty": 0.35,       "cost": 385,      "currency": "GBP" },
-        { "date": "2021-02-23", "type": "buy",          "qty": 0.94609685, "cost": 986.482,  "currency": "USD", "fxToGbp": 1.399671, "costGbp": 704.80 },
-        { "date": "2021-02-23", "type": "buy",          "qty": 1.38769803, "cost": 2084.82,  "currency": "USD", "fxToGbp": 1.399671, "costGbp": 1489.50 },
-        { "date": "2021-01-08", "type": "buy",          "qty": 1.01183382, "cost": 1338.78,  "currency": "USD", "fxToGbp": 1.399671, "costGbp": 956.50 }
+        {
+          "date": "2024-11-11",
+          "type": "transfer_out",
+          "qty": 0.09,
+          "cost": 0,
+          "currency": "GBP",
+          "note": "Moved off exchange - no proceeds"
+        },
+        {
+          "date": "2022-06-14",
+          "type": "buy",
+          "qty": 1.50337882,
+          "cost": 1498.69,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-12-09",
+          "type": "buy",
+          "qty": 1.31,
+          "cost": 0,
+          "currency": "GBP",
+          "note": "Recorded with £0 cost in CoinGecko"
+        },
+        {
+          "date": "2021-04-01",
+          "type": "buy",
+          "qty": 0.35,
+          "cost": 385,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-02-23",
+          "type": "buy",
+          "qty": 0.94609685,
+          "cost": 986.482,
+          "currency": "USD",
+          "fxToGbp": 1.399671,
+          "costGbp": 704.8
+        },
+        {
+          "date": "2021-02-23",
+          "type": "buy",
+          "qty": 1.38769803,
+          "cost": 2084.82,
+          "currency": "USD",
+          "fxToGbp": 1.399671,
+          "costGbp": 1489.5
+        },
+        {
+          "date": "2021-01-08",
+          "type": "buy",
+          "qty": 1.01183382,
+          "cost": 1338.78,
+          "currency": "USD",
+          "fxToGbp": 1.399671,
+          "costGbp": 956.5
+        }
       ]
     },
     {
@@ -41,17 +129,85 @@
       "coingeckoId": "chainlink",
       "colour": "#2a5ada",
       "transactions": [
-        { "date": "2026-03-24", "type": "buy",  "qty": 107.23,      "cost": 749.998, "currency": "GBP" },
-        { "date": "2026-03-18", "type": "buy",  "qty": 65.83,       "cost": 500.042, "currency": "GBP" },
-        { "date": "2026-03-07", "type": "buy",  "qty": 55.99,       "cost": 379.957, "currency": "GBP" },
-        { "date": "2025-02-25", "type": "buy",  "qty": 52.42,       "cost": 599.445, "currency": "GBP" },
-        { "date": "2025-02-11", "type": "buy",  "qty": 58.59880982, "cost": 907.274, "currency": "GBP" },
-        { "date": "2025-02-02", "type": "buy",  "qty": 3.88588,     "cost": 69.0154, "currency": "GBP" },
-        { "date": "2022-02-15", "type": "sell", "qty": 0.322,       "cost": 3.78028, "currency": "GBP" },
-        { "date": "2022-02-15", "type": "buy",  "qty": 13.15,       "cost": 155.151, "currency": "GBP" },
-        { "date": "2021-05-23", "type": "buy",  "qty": 6.6,         "cost": 87.586,  "currency": "GBP" },
-        { "date": "2021-05-03", "type": "sell", "qty": 0.12,        "cost": 3.6372,  "currency": "GBP" },
-        { "date": "2021-02-02", "type": "buy",  "qty": 12.24,       "cost": 318.24,  "currency": "USD", "fxToGbp": 1.358590, "costGbp": 234.25 }
+        {
+          "date": "2026-03-24",
+          "type": "buy",
+          "qty": 107.23,
+          "cost": 749.998,
+          "currency": "GBP"
+        },
+        {
+          "date": "2026-03-18",
+          "type": "buy",
+          "qty": 65.83,
+          "cost": 500.042,
+          "currency": "GBP"
+        },
+        {
+          "date": "2026-03-07",
+          "type": "buy",
+          "qty": 55.99,
+          "cost": 379.957,
+          "currency": "GBP"
+        },
+        {
+          "date": "2025-02-25",
+          "type": "buy",
+          "qty": 52.42,
+          "cost": 599.445,
+          "currency": "GBP"
+        },
+        {
+          "date": "2025-02-11",
+          "type": "buy",
+          "qty": 58.59880982,
+          "cost": 907.274,
+          "currency": "GBP"
+        },
+        {
+          "date": "2025-02-02",
+          "type": "buy",
+          "qty": 3.88588,
+          "cost": 69.0154,
+          "currency": "GBP"
+        },
+        {
+          "date": "2022-02-15",
+          "type": "sell",
+          "qty": 0.322,
+          "cost": 3.78028,
+          "currency": "GBP"
+        },
+        {
+          "date": "2022-02-15",
+          "type": "buy",
+          "qty": 13.15,
+          "cost": 155.151,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-05-23",
+          "type": "buy",
+          "qty": 6.6,
+          "cost": 87.586,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-05-03",
+          "type": "sell",
+          "qty": 0.12,
+          "cost": 3.6372,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-02-02",
+          "type": "buy",
+          "qty": 12.24,
+          "cost": 318.24,
+          "currency": "USD",
+          "fxToGbp": 1.35859,
+          "costGbp": 234.25
+        }
       ]
     },
     {
@@ -60,15 +216,230 @@
       "coingeckoId": "solana",
       "colour": "#14f195",
       "transactions": [
-        { "date": "2026-03-27", "type": "buy",         "qty": 4.62,     "cost": 299.604, "currency": "GBP" },
-        { "date": "2026-02-24", "type": "buy",         "qty": 8.76778,  "cost": 502,     "currency": "GBP" },
-        { "date": "2025-08-13", "type": "transfer_in", "qty": 1.0926,   "cost": 0,       "currency": "GBP", "note": "Transferred in - no cost recorded" },
-        { "date": "2024-11-22", "type": "transfer_in", "qty": 0.0217,   "cost": 0,       "currency": "GBP", "note": "Transferred in - no cost recorded" },
-        { "date": "2024-11-17", "type": "transfer_in", "qty": 0.09,     "cost": 0,       "currency": "GBP", "note": "Transferred in - no cost recorded" },
-        { "date": "2024-11-09", "type": "transfer_in", "qty": 1.28,     "cost": 0,       "currency": "GBP", "note": "Transferred in - no cost recorded" },
-        { "date": "2023-12-08", "type": "buy",         "qty": 2.32,     "cost": 0,       "currency": "GBP", "note": "Recorded with £0 cost in CoinGecko" },
-        { "date": "2023-01-28", "type": "buy",         "qty": 2.54,     "cost": 49.6062, "currency": "GBP" },
-        { "date": "2021-05-04", "type": "buy",         "qty": 14.279,   "cost": 511.92,  "currency": "GBP" }
+        {
+          "date": "2026-03-27",
+          "type": "buy",
+          "qty": 4.62,
+          "cost": 299.604,
+          "currency": "GBP"
+        },
+        {
+          "date": "2026-02-24",
+          "type": "buy",
+          "qty": 8.76778,
+          "cost": 502,
+          "currency": "GBP"
+        },
+        {
+          "date": "2025-08-13",
+          "type": "transfer_in",
+          "qty": 1.0926,
+          "cost": 0,
+          "currency": "GBP",
+          "note": "Transferred in - no cost recorded"
+        },
+        {
+          "date": "2024-11-22",
+          "type": "transfer_in",
+          "qty": 0.0217,
+          "cost": 0,
+          "currency": "GBP",
+          "note": "Transferred in - no cost recorded"
+        },
+        {
+          "date": "2024-11-17",
+          "type": "transfer_in",
+          "qty": 0.09,
+          "cost": 0,
+          "currency": "GBP",
+          "note": "Transferred in - no cost recorded"
+        },
+        {
+          "date": "2024-11-09",
+          "type": "transfer_in",
+          "qty": 1.28,
+          "cost": 0,
+          "currency": "GBP",
+          "note": "Transferred in - no cost recorded"
+        },
+        {
+          "date": "2023-12-08",
+          "type": "buy",
+          "qty": 2.32,
+          "cost": 0,
+          "currency": "GBP",
+          "note": "Recorded with £0 cost in CoinGecko"
+        },
+        {
+          "date": "2023-01-28",
+          "type": "buy",
+          "qty": 2.54,
+          "cost": 49.6062,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-05-04",
+          "type": "buy",
+          "qty": 14.279,
+          "cost": 511.92,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "XRP",
+      "name": "XRP",
+      "coingeckoId": "ripple",
+      "colour": "#e2e8f0",
+      "transactions": [
+        {
+          "date": "2023-01-21",
+          "type": "buy",
+          "qty": 453.0,
+          "cost": 150.358,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-02-23",
+          "type": "buy",
+          "qty": 19.990229,
+          "cost": 7.09726,
+          "currency": "USD",
+          "fxToGbp": 1.37696,
+          "costGbp": 5.15
+        },
+        {
+          "date": "2021-02-23",
+          "type": "buy",
+          "qty": 8.197767,
+          "cost": 4.78724,
+          "currency": "USD",
+          "fxToGbp": 1.37696,
+          "costGbp": 3.48
+        },
+        {
+          "date": "2021-02-23",
+          "type": "buy",
+          "qty": 650.0,
+          "cost": 364,
+          "currency": "USD",
+          "fxToGbp": 1.37696,
+          "costGbp": 264.35
+        },
+        {
+          "date": "2020-12-22",
+          "type": "buy",
+          "qty": 1393.430799,
+          "cost": 503.057,
+          "currency": "USD",
+          "fxToGbp": 1.37696,
+          "costGbp": 365.34
+        }
+      ]
+    },
+    {
+      "symbol": "UNI",
+      "name": "Uniswap",
+      "coingeckoId": "uniswap",
+      "colour": "#ff007a",
+      "transactions": [
+        {
+          "date": "2026-03-24",
+          "type": "buy",
+          "qty": 182.84,
+          "cost": 500.081,
+          "currency": "GBP"
+        },
+        {
+          "date": "2026-03-07",
+          "type": "buy",
+          "qty": 42.01,
+          "cost": 125.001,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-05-04",
+          "type": "buy",
+          "qty": 5.4055,
+          "cost": 173.399,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-05-03",
+          "type": "sell",
+          "qty": 0.05,
+          "cost": 1.4955,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-03-03",
+          "type": "buy",
+          "qty": 6.01,
+          "cost": 127.412,
+          "currency": "USD",
+          "fxToGbp": 1.39508,
+          "costGbp": 91.33
+        }
+      ]
+    },
+    {
+      "symbol": "SUI",
+      "name": "Sui",
+      "coingeckoId": "sui",
+      "colour": "#7dd3fc",
+      "transactions": [
+        {
+          "date": "2025-11-20",
+          "type": "buy",
+          "qty": 1088.382,
+          "cost": 1255.37,
+          "currency": "GBP"
+        },
+        {
+          "date": "2025-03-10",
+          "type": "buy",
+          "qty": 611.995,
+          "cost": 999.576,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "FIL",
+      "name": "Filecoin",
+      "coingeckoId": "filecoin",
+      "colour": "#0090ff",
+      "transactions": [
+        {
+          "date": "2026-02-18",
+          "type": "buy",
+          "qty": 707.52,
+          "cost": 520,
+          "currency": "GBP"
+        },
+        {
+          "date": "2025-02-03",
+          "type": "buy",
+          "qty": 86.05852,
+          "cost": 310.64,
+          "currency": "USD",
+          "fxToGbp": 1.24614,
+          "costGbp": 249.28
+        },
+        {
+          "date": "2024-12-20",
+          "type": "buy",
+          "qty": 139.71,
+          "cost": 499.787,
+          "currency": "GBP"
+        },
+        {
+          "date": "2024-11-23",
+          "type": "buy",
+          "qty": 462.66233767,
+          "cost": 2000,
+          "currency": "GBP"
+        }
       ]
     }
   ]

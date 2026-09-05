@@ -65,7 +65,7 @@ entry to the right asset and the dashboard recalculates:
 - Transfers move quantity without affecting cost basis
 
 To track a new coin, add an asset block with its CoinGecko id (the last part of its
-coingecko.com URL, e.g. `cardano`).
+coingecko.com URL, e.g. `cardano`). Eight are tracked today: BTC, ETH, LINK, SOL, XRP, UNI, SUI and FIL.
 
 [`PORTFOLIO.md`](PORTFOLIO.md) is the human-readable copy of the same history, including
 what is missing or uncertain in it.

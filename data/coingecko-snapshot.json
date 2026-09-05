@@ -14,7 +14,7 @@
     },
     "ETH": {
       "holdings": 6.41900752,
-      "holdingsValue": 11766.50,
+      "holdingsValue": 11766.5,
       "totalCost": 5034.47,
       "averageNetCost": 784.31,
       "totalProfitLoss": 6732.03,
@@ -31,14 +31,49 @@
       "impliedPrice": 8.887
     },
     "SOL": {
-      "$note": "No portfolio summary card was captured for SOL - only the transaction list. Holdings are computed from those transactions; impliedPrice came from a live CoinGecko lookup on the same day, not from a screenshot.",
       "holdings": 35.01108,
-      "holdingsValue": null,
-      "totalCost": null,
-      "averageNetCost": null,
-      "totalProfitLoss": null,
-      "totalProfitLossPct": null,
-      "impliedPrice": 76.65
+      "holdingsValue": 2678.0,
+      "totalCost": 1363.13,
+      "averageNetCost": 38.93,
+      "totalProfitLoss": 1314.87,
+      "totalProfitLossPct": 96.5,
+      "impliedPrice": 76.489
+    },
+    "XRP": {
+      "holdings": 2524.618795,
+      "holdingsValue": 2646.88,
+      "totalCost": 788.68,
+      "averageNetCost": 0.312395,
+      "totalProfitLoss": 1858.2,
+      "totalProfitLossPct": 235.6,
+      "impliedPrice": 1.048425
+    },
+    "UNI": {
+      "holdings": 236.2155,
+      "holdingsValue": 1240.23,
+      "totalCost": 889.81,
+      "averageNetCost": 3.76,
+      "totalProfitLoss": 351.92,
+      "totalProfitLossPct": 39.6,
+      "impliedPrice": 5.250412
+    },
+    "SUI": {
+      "holdings": 1700.377,
+      "holdingsValue": 1008.82,
+      "totalCost": 2254.94,
+      "averageNetCost": 1.33,
+      "totalProfitLoss": -1246.12,
+      "totalProfitLossPct": -55.3,
+      "impliedPrice": 0.593293
+    },
+    "FIL": {
+      "holdings": 1395.95085767,
+      "holdingsValue": 817.01,
+      "totalCost": 3269.07,
+      "averageNetCost": 2.34,
+      "totalProfitLoss": -2452.06,
+      "totalProfitLossPct": -75.0,
+      "impliedPrice": 0.585272
     }
   }
 }
