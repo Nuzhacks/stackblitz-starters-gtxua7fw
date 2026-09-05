@@ -1,0 +1,44 @@
+{
+  "$comment": "Figures CoinGecko displayed at import time. Used only to verify the dashboard's own calculations reconcile. Not used for live pricing.",
+  "capturedAt": "2026-09-05T22:09:00Z",
+  "currency": "GBP",
+  "assets": {
+    "BTC": {
+      "holdings": 0.30871163,
+      "holdingsValue": 18213.97,
+      "totalCost": 9288.44,
+      "averageNetCost": 26635.63,
+      "totalProfitLoss": 9991.24,
+      "totalProfitLossPct": 107.6,
+      "impliedPrice": 59000.0
+    },
+    "ETH": {
+      "holdings": 6.41900752,
+      "holdingsValue": 11766.50,
+      "totalCost": 5034.47,
+      "averageNetCost": 784.31,
+      "totalProfitLoss": 6732.03,
+      "totalProfitLossPct": 133.7,
+      "impliedPrice": 1833.06
+    },
+    "LINK": {
+      "holdings": 375.50268982,
+      "holdingsValue": 3337.05,
+      "totalCost": 3682.72,
+      "averageNetCost": 9.79,
+      "totalProfitLoss": -338.25,
+      "totalProfitLossPct": -9.2,
+      "impliedPrice": 8.887
+    },
+    "SOL": {
+      "$note": "No portfolio summary card was captured for SOL - only the transaction list. Holdings are computed from those transactions; impliedPrice came from a live CoinGecko lookup on the same day, not from a screenshot.",
+      "holdings": 35.01108,
+      "holdingsValue": null,
+      "totalCost": null,
+      "averageNetCost": null,
+      "totalProfitLoss": null,
+      "totalProfitLossPct": null,
+      "impliedPrice": 76.65
+    }
+  }
+}

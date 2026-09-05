@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Crypto portfolio dashboard
 
-## Getting Started
+A personal dashboard for monitoring crypto holdings and setting exit alerts. Live prices
+come from CoinGecko; the transaction history is kept in a file you own.
 
-First, run the development server:
+## Running it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun run dev
+npm install
+npm run dev        # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+No API key is needed. CoinGecko's free endpoint allows a modest number of calls per
+minute and the dashboard refreshes once a minute, which sits well inside that. If you hit
+rate limits, put a free demo key in `.env.local`:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+COINGECKO_API_KEY=CG-your-key-here
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+If the price lookup fails for any reason the dashboard falls back to the prices captured
+at import time and says so at the top, rather than showing blanks.
 
-## Learn More
+## What it shows
 
-To learn more about Next.js, take a look at the following resources:
+- Portfolio value, total profit/loss, 24 hour move and net invested
+- A row per asset with price, 24h change, average net cost, value and profit/loss
+- Click any asset to expand its full transaction history, average buy price and
+  break-even price
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Exit alerts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The alerts panel lets you set rules that are checked every time prices refresh:
 
-## Deploy on Vercel
+| Rule | Use it for |
+|---|---|
+| Price rises above / falls below | A specific price you want to act at |
+| Total profit rises above | Taking profit at a percentage return |
+| Total profit falls below | A stop measured against what you put in |
+| Holding value rises above | A cash target for a position |
+| Trailing stop from peak | Protecting gains once a run is over |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Suggest exit plan** generates a starting set for the selected asset: take-profit rungs
+above the current return, a 20% trailing stop, and a break-even warning.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Alerts are stored in the browser's local storage, so they stay on the device you set them
+on and are not synced anywhere. Turn on desktop notifications to be told when one fires
+while the tab is open in the background.
+
+Alerts fire while the page is open. They are a prompt to look, not an automated trade.
+
+## Adding transactions
+
+Everything is derived from [`data/transactions.json`](data/transactions.json). Add an
+entry to the right asset and the dashboard recalculates:
+
+```json
+{ "date": "2026-09-05", "type": "buy", "qty": 0.5, "cost": 250.00, "currency": "GBP" }
+```
+
+- `type` is `buy`, `sell`, `transfer_in` or `transfer_out`
+- `cost` is the total amount, not the unit price
+- For a USD amount, add `"currency": "USD"` and either `"fxToGbp": 1.27` or a
+  pre-converted `"costGbp": 196.85`
+- Transfers move quantity without affecting cost basis
+
+To track a new coin, add an asset block with its CoinGecko id (the last part of its
+coingecko.com URL, e.g. `cardano`).
+
+[`PORTFOLIO.md`](PORTFOLIO.md) is the human-readable copy of the same history, including
+what is missing or uncertain in it.
+
+## How figures are calculated
+
+The maths follows CoinGecko's conventions so the numbers reconcile with the app the data
+was imported from — total cost counts buys only, average net cost nets off sale proceeds,
+and profit/loss percentage is measured against total cost. See the bottom of
+`PORTFOLIO.md` for the exact formulas.
