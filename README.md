@@ -28,6 +28,25 @@ at import time and says so at the top, rather than showing blanks.
 - Click any asset to expand its full transaction history, average buy price and
   break-even price
 
+## History chart
+
+The dashboard opens with portfolio value since 2021, plotted against what you had put
+in by each point. Value is computed from each coin's daily GBP price applied to the
+holdings you actually owned that week, so the line moves both when prices move and when
+you buy. Hover for any week's figures, switch between 1Y / 3Y / All, or open the table
+view for the same data as numbers.
+
+The series lives in [`data/history.json`](data/history.json). Refresh it after adding
+transactions:
+
+```bash
+npm run fetch-history
+```
+
+That takes a minute or so — one request per coin, paced to stay inside CoinGecko's free
+rate limit. Transactions with no recorded date cannot be placed on a timeline, so they
+are left out; the file records how much cost that excludes.
+
 ## Exit alerts
 
 The alerts panel lets you set rules that are checked every time prices refresh:

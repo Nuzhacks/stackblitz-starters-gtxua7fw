@@ -6,6 +6,8 @@ import { buildSummary, costInGbp } from '@/lib/portfolio';
 import { money, originalAmount, pct, qty as fmtQty, shortDate, signedMoney, timeAgo } from '@/lib/format';
 import { evaluateAlert, loadAlerts, saveAlerts, trackPeaks, type Alert } from '@/lib/alerts';
 import AlertsPanel from './AlertsPanel';
+import HistoryChart from './HistoryChart';
+import history from '@/data/history.json';
 
 const REFRESH_MS = 60_000;
 
@@ -192,6 +194,8 @@ export default function Dashboard({ data }: { data: PortfolioData }) {
           ),
         )}
       </div>
+
+      <HistoryChart series={history.series as [string, number, number][]} />
 
       <section className="mb-6 overflow-x-auto rounded-2xl border border-ink-500 bg-ink-800">
         <table className="w-full min-w-[560px] text-sm">
