@@ -308,6 +308,15 @@
       "totalProfitLoss": -123.19,
       "totalProfitLossPct": -98.5,
       "impliedPrice": 0.02077216
+    },
+    "ANKR": {
+      "holdings": 458,
+      "holdingsValue": 1.44,
+      "totalCost": 50.38,
+      "averageNetCost": 0.11,
+      "totalProfitLoss": -48.94,
+      "totalProfitLossPct": -97.1,
+      "impliedPrice": 0.0031441
     }
   }
 }

@@ -1139,6 +1139,21 @@
           "currency": "GBP"
         }
       ]
+    },
+    {
+      "symbol": "ANKR",
+      "name": "Ankr Network",
+      "coingeckoId": "ankr",
+      "colour": "#2ea8ff",
+      "transactions": [
+        {
+          "date": "2021-04-22",
+          "type": "buy",
+          "qty": 458.0,
+          "cost": 50.38,
+          "currency": "GBP"
+        }
+      ]
     }
   ]
 }
