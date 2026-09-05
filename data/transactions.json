@@ -3,7 +3,7 @@
   "baseCurrency": "GBP",
   "lastImportedAt": "2026-09-05",
   "sources": [
-    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-23:01"
+    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-23:24"
   ],
   "assets": [
     {
@@ -1151,6 +1151,99 @@
           "type": "buy",
           "qty": 458.0,
           "cost": 50.38,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "ENJ",
+      "name": "Enjin Coin",
+      "coingeckoId": "enjincoin",
+      "colour": "#7866d5",
+      "transactions": [
+        {
+          "date": "2021-11-28",
+          "type": "buy",
+          "qty": 59.48,
+          "cost": 166.76,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "STREAM",
+      "name": "Solstream",
+      "coingeckoId": "solstream",
+      "colour": "#22d3ee",
+      "transactions": [
+        {
+          "date": "2024-04-01",
+          "type": "buy",
+          "qty": 1187.0,
+          "cost": 307.733,
+          "currency": "USD",
+          "fxToGbp": 1.25426,
+          "costGbp": 245.35
+        }
+      ]
+    },
+    {
+      "symbol": "ATRI",
+      "name": "Atari",
+      "coingeckoId": "atari",
+      "colour": "#e11d48",
+      "transactions": [
+        {
+          "date": "2021-12-23",
+          "type": "buy",
+          "qty": 2656.0,
+          "cost": 127.728,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-12-04",
+          "type": "buy",
+          "qty": 763.0,
+          "cost": 60.0065,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-11-28",
+          "type": "buy",
+          "qty": 1413.0,
+          "cost": 166.43,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "MAIL",
+      "name": "SolMail",
+      "coingeckoId": "solmail",
+      "colour": "#34d399",
+      "transactions": [
+        {
+          "date": "2024-04-01",
+          "type": "buy",
+          "qty": 4039.0,
+          "cost": 225.893,
+          "currency": "USD",
+          "fxToGbp": 1.25426,
+          "costGbp": 180.1
+        }
+      ]
+    },
+    {
+      "symbol": "SRM",
+      "name": "Serum",
+      "coingeckoId": "serum",
+      "colour": "#38bdf8",
+      "transactions": [
+        {
+          "date": "2021-11-25",
+          "type": "buy",
+          "qty": 30.0,
+          "cost": 128.1,
           "currency": "GBP"
         }
       ]

@@ -317,6 +317,51 @@
       "totalProfitLoss": -48.94,
       "totalProfitLossPct": -97.1,
       "impliedPrice": 0.0031441
+    },
+    "ENJ": {
+      "holdings": 59.48,
+      "holdingsValue": 1.21,
+      "totalCost": 166.76,
+      "averageNetCost": 2.8,
+      "totalProfitLoss": -165.55,
+      "totalProfitLossPct": -99.3,
+      "impliedPrice": 0.02034297
+    },
+    "STREAM": {
+      "holdings": 1187,
+      "holdingsValue": 0.807149,
+      "totalCost": 245.35,
+      "averageNetCost": 0.206694,
+      "totalProfitLoss": -244.54,
+      "totalProfitLossPct": -99.7,
+      "impliedPrice": 0.00067999
+    },
+    "ATRI": {
+      "holdings": 4832,
+      "holdingsValue": 0.736913,
+      "totalCost": 354.16,
+      "averageNetCost": 0.073296,
+      "totalProfitLoss": -353.43,
+      "totalProfitLossPct": -99.8,
+      "impliedPrice": 0.00015251
+    },
+    "MAIL": {
+      "holdings": 4039,
+      "holdingsValue": 0.494206,
+      "totalCost": 180.1,
+      "averageNetCost": 0.04458949,
+      "totalProfitLoss": -179.6,
+      "totalProfitLossPct": -99.7,
+      "impliedPrice": 0.00012236
+    },
+    "SRM": {
+      "holdings": 30,
+      "holdingsValue": 0.188967,
+      "totalCost": 128.1,
+      "averageNetCost": 4.27,
+      "totalProfitLoss": -127.91,
+      "totalProfitLossPct": -99.8,
+      "impliedPrice": 0.0062989
     }
   }
 }
