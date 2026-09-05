@@ -1,6 +1,6 @@
 # Portfolio record
 
-Transcribed from CoinGecko app screenshots taken on 5 September 2026 (22:09–23:24).
+Transcribed from CoinGecko app screenshots taken on 5 September 2026 (22:09–23:27).
 The machine-readable source of truth is [`data/transactions.json`](data/transactions.json);
 this file is the human-readable copy, generated from it.
 
@@ -52,23 +52,27 @@ showed dates only, no times of day.**
 | ATRI Atari | 4,832 | £0.74 | £354.16 | — | £0.0733 | −£353.43 (-99.8%) | 3 |
 | MAIL SolMail | 4,039 | £0.49 | £180.10 | — | £0.0446 | −£179.61 (-99.7%) | 1 |
 | SRM Serum | 30 | £0.19 | £128.10 | — | £4.2700 | −£127.91 (-99.9%) | 1 |
-| **Total** | | **£44,460.84** | **£41,221.29** | **£1,105.53** | | **+£4,345.07 (+10.5%)** | **121** |
+| MEDIA Solmedia | 2,140 | £0.18 | £61.20 | — | £0.0286 | −£61.02 (-99.7%) | 1 |
+| MIST Mist | 638.29 | £0.13 | £79.35 | — | £0.1243 | −£79.22 (-99.8%) | 2 |
+| GLMR Moonbeam | 24.05 | £0.12 | £255.65 | — | £10.63 | −£255.53 (-100.0%) | 1 |
+| WRLD NFT Worlds | 417.861 | £0.05 | £93.39 | — | £0.2235 | −£93.34 (-99.9%) | 1 |
+| LMT LIMITUS | 1,296.822 | £0.05 | £157.87 | — | £0.1217 | −£157.82 (-100.0%) | 1 |
+| **Total** | | **£44,461.37** | **£41,868.75** | **£1,105.53** | | **+£3,698.14 (+8.8%)** | **127** |
 
-Forty assets, 121 transactions. **Thirty-five of the forty are underwater**, together
-about £15,903 of loss against £20,248 of gains.
+Forty-five assets, 127 transactions. **Forty of the forty-five are underwater**, together
+about £16,550 of loss against £20,248 of gains.
 
 Only five positions are up: BTC, ETH, SOL, XRP and UNI. BTC and ETH alone are 67% of
 portfolio value and, with the other three, the whole of the gain.
 
-Worst by percentage: SRM (−99.9%), ATRI (−99.8%), STREAM (−99.7%), MAIL (−99.7%),
-VSP (−99.3%), ENJ (−99.3%).
+Worst by percentage: GLMR (−100.0%), LMT (−100.0%), WRLD (−99.9%), SRM (−99.9%),
+MIST (−99.8%), ATRI (−99.8%).
 Worst in money: FIL (−£2,452), DOT (−£1,649), SUI (−£1,246), FLOW (−£972), CRV (−£919).
 
-**Twenty-nine positions are worth under £250 each. Together they hold £1,028 against
-£11,507 invested** — 91% of the money in that tail is gone. Twenty-one are worth under
-£30 and eleven under £5. Break-even on most needs a move of 5x or more, and at the
-smallest sizes the position is worth less than a typical withdrawal fee, so several
-cannot be sold for a net gain at any plausible price.
+**Thirty-four positions are worth under £250 each. Together they hold £1,029 against
+£12,154 invested** — 92% of the money in that tail is gone. Sixteen are worth under £5
+and nine under £1. At those sizes the position is worth less than a typical withdrawal
+fee, so they cannot be sold for a net gain at any plausible price.
 
 ## Transactions by asset
 
@@ -393,6 +397,37 @@ cannot be sold for a net gain at any plausible price.
 |---|---|---:|---:|---:|
 | 25 Nov 2021 | Buy | +30 | £128.10 | £4.2700 |
 
+## MEDIA — Solmedia
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 1 Apr 2024 | Buy | +2,140 | £61.20 ($76.7661) | £0.0286 |
+
+## MIST — Mist
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 23 Dec 2021 | Buy | +336.188 | £27.99 | £0.0833 |
+| 26 Nov 2021 | Buy | +302.102 | £51.36 | £0.1700 |
+
+## GLMR — Moonbeam
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 11 Jan 2022 | Buy | +24.05 | £255.65 | £10.63 |
+
+## LMT — LIMITUS
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 25 Jan 2025 | Buy | +1,296.822 | £157.87 | £0.1217 |
+
+## WRLD — NFT Worlds
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| 27 Feb 2022 | Buy | +417.861 | £93.39 | £0.2235 |
+
 ## How the numbers are calculated
 
 The dashboard follows CoinGecko's own conventions so figures reconcile with the app the
@@ -405,7 +440,7 @@ data came from:
 - Transfers move quantity without touching cost or proceeds
 
 Verified: computed holdings, total cost, average net cost and profit match the CoinGecko
-figures for all forty assets (see `data/coingecko-snapshot.json`). A few profit
+figures for all forty-five assets (see `data/coingecko-snapshot.json`). A few profit
 percentages differ in the first decimal place — UNI, OMI and OCEAN — because CoinGecko
 rounds its displayed value and holdings before dividing. The largest such gap is worth
 about 6p in 100.
@@ -420,7 +455,7 @@ screenshots matched to within a fraction of a percent on every asset.
    (8 Dec 2023) are recorded with £0 cost, and the transfers in on SOL, ADA and DOT carry
    no cost either. All flatter the average cost on those positions. Worth correcting if
    the real prices are known.
-3. **Foreign-currency conversions** — twenty-nine transactions were priced in USD and one
+3. **Foreign-currency conversions** — thirty transactions were priced in USD and one
    in EUR. Each rate is chosen so its asset's total reconciles exactly with CoinGecko's
    own total. Where several assets share a purchase date, the rate is cross-checked
    between them, which pins it down independently:
@@ -433,8 +468,8 @@ screenshots matched to within a fraction of a percent on every asset.
    - Single-transaction rates: FIL 1.2461, RENDER 1.2446, KAS 1.2212, CRV 1.3762,
      XLM 1.3778, FIDA 1.2206, ETH 1.3475 (8 Jan 2021), XRP 1.3440 (22 Dec 2020), and
      DOT's euro buy at 1.1588.
-   - **1 Apr 2024** — STREAM implies 1.25425 and MAIL 1.25427, agreeing to five decimal
-     places; 1.25426 is used for both.
+   - **1 Apr 2024** — STREAM implies 1.25425, MAIL 1.25427 and MEDIA 1.25435, agreeing
+     to four decimal places; 1.25426 is used for all three.
    - **OMI** spans two dates with no corroboration available, so its two dollar buys use
      rates in the real market's proportion for 18 March and 2 April 2021 (1.3932 and
      1.3832), scaled slightly so the total reconciles.
@@ -444,5 +479,16 @@ screenshots matched to within a fraction of a percent on every asset.
      candidate was within a factor of 4,000.
    - **SNX** resolves under CoinGecko's legacy id `havven`, not
      `synthetix-network-token`, which does not resolve.
-5. **Possible missing assets** — forty were captured. Add more as screenshots
+   - **MEDIA** is `solmedia`, not `media-network`; **MIST** is `mist`, not `alchemist`.
+     Both were settled the same way as BASE — by price. The correct id matched the
+     screenshot to within 0.3% in each case and the alternative was out by a factor of
+     840 or more.
+   - **STREAM** and **MAIL** are `solstream` and `solmail`; neither appeared in search
+     results and both had to be found in the full coin list.
+6. **WRLD price gap** — NFT Worlds is the one asset whose live price differs materially
+   from the screenshot's implied value (£0.000103 against £0.000128, about 24%). The
+   identity is not in doubt: it is the only coin of that name and ticker. The gap
+   reflects how thinly the token trades — CoinGecko reports no 24-hour change for it at
+   all, so quotes move in jumps between rare trades.
+5. **Possible missing assets** — forty-five were captured. Add more as screenshots
    arrive.

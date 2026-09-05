@@ -3,7 +3,7 @@
   "baseCurrency": "GBP",
   "lastImportedAt": "2026-09-05",
   "sources": [
-    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-23:24"
+    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-23:27"
   ],
   "assets": [
     {
@@ -1244,6 +1244,90 @@
           "type": "buy",
           "qty": 30.0,
           "cost": 128.1,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "MEDIA",
+      "name": "Solmedia",
+      "coingeckoId": "solmedia",
+      "colour": "#c084fc",
+      "transactions": [
+        {
+          "date": "2024-04-01",
+          "type": "buy",
+          "qty": 2140.0,
+          "cost": 76.7661,
+          "currency": "USD",
+          "fxToGbp": 1.25426,
+          "costGbp": 61.2
+        }
+      ]
+    },
+    {
+      "symbol": "MIST",
+      "name": "Mist",
+      "coingeckoId": "mist",
+      "colour": "#facc15",
+      "transactions": [
+        {
+          "date": "2021-12-23",
+          "type": "buy",
+          "qty": 336.188,
+          "cost": 27.9913,
+          "currency": "GBP"
+        },
+        {
+          "date": "2021-11-26",
+          "type": "buy",
+          "qty": 302.102,
+          "cost": 51.3573,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "GLMR",
+      "name": "Moonbeam",
+      "coingeckoId": "moonbeam",
+      "colour": "#8b5cf6",
+      "transactions": [
+        {
+          "date": "2022-01-11",
+          "type": "buy",
+          "qty": 24.05,
+          "cost": 255.652,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "LMT",
+      "name": "LIMITUS",
+      "coingeckoId": "limitus",
+      "colour": "#94a3b8",
+      "transactions": [
+        {
+          "date": "2025-01-25",
+          "type": "buy",
+          "qty": 1296.822,
+          "cost": 157.868,
+          "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "WRLD",
+      "name": "NFT Worlds",
+      "coingeckoId": "nft-worlds",
+      "colour": "#65a30d",
+      "transactions": [
+        {
+          "date": "2022-02-27",
+          "type": "buy",
+          "qty": 417.861,
+          "cost": 93.3936,
           "currency": "GBP"
         }
       ]

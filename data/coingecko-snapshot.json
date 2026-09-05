@@ -362,6 +362,51 @@
       "totalProfitLoss": -127.91,
       "totalProfitLossPct": -99.8,
       "impliedPrice": 0.0062989
+    },
+    "MEDIA": {
+      "holdings": 2140,
+      "holdingsValue": 0.18394,
+      "totalCost": 61.2,
+      "averageNetCost": 0.02859953,
+      "totalProfitLoss": -61.02,
+      "totalProfitLossPct": -99.7,
+      "impliedPrice": 8.595e-05
+    },
+    "MIST": {
+      "holdings": 638.29,
+      "holdingsValue": 0.127488,
+      "totalCost": 79.35,
+      "averageNetCost": 0.124314,
+      "totalProfitLoss": -79.22,
+      "totalProfitLossPct": -99.8,
+      "impliedPrice": 0.00019973
+    },
+    "GLMR": {
+      "holdings": 24.05,
+      "holdingsValue": 0.117604,
+      "totalCost": 255.65,
+      "averageNetCost": 10.63,
+      "totalProfitLoss": -255.53,
+      "totalProfitLossPct": -100.0,
+      "impliedPrice": 0.00488998
+    },
+    "LMT": {
+      "holdings": 1296.822,
+      "holdingsValue": 0.04545307,
+      "totalCost": 157.87,
+      "averageNetCost": 0.121735,
+      "totalProfitLoss": -157.82,
+      "totalProfitLossPct": -100.0,
+      "impliedPrice": 3.505e-05
+    },
+    "WRLD": {
+      "holdings": 417.861,
+      "holdingsValue": 0.053571,
+      "totalCost": 93.39,
+      "averageNetCost": 0.223504,
+      "totalProfitLoss": -93.34,
+      "totalProfitLossPct": -99.9,
+      "impliedPrice": 0.0001282
     }
   }
 }
