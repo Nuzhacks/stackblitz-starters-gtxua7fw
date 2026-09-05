@@ -107,6 +107,11 @@ export default function Dashboard({ data }: { data: PortfolioData }) {
     Notification.requestPermission().then(setNotificationState);
   }
 
+  const staleSymbols = useMemo(
+    () => summary.positions.filter((p) => p.priceStale).map((p) => p.symbol),
+    [summary],
+  );
+
   const plColour = summary.totalProfitLoss >= 0 ? 'text-gain' : 'text-loss';
   const dayColour = summary.change24hValue >= 0 ? 'text-gain' : 'text-loss';
 
@@ -232,7 +237,17 @@ export default function Dashboard({ data }: { data: PortfolioData }) {
                       {p.allocationPct !== null && ` \u00b7 ${p.allocationPct.toFixed(1)}%`}
                     </span>
                   </td>
-                  <td className="px-4 py-3 text-right tnum">{money(p.price)}</td>
+                  <td className="px-4 py-3 text-right tnum">
+                    {money(p.price)}
+                    {p.priceStale && p.price !== null && (
+                      <span
+                        className="ml-1 cursor-help text-amber-500"
+                        title="No live price — using the price from your imported snapshot"
+                      >
+                        *
+                      </span>
+                    )}
+                  </td>
                   <td
                     className={`hidden px-4 py-3 text-right tnum sm:table-cell ${
                       (p.change24h ?? 0) >= 0 ? 'text-gain' : 'text-loss'
@@ -333,6 +348,16 @@ export default function Dashboard({ data }: { data: PortfolioData }) {
         notificationState={notificationState}
         onEnableNotifications={enableNotifications}
       />
+
+      {source === 'coingecko' && staleSymbols.length > 0 && (
+        <p className="mt-4 text-xs text-amber-500/80">
+          * {staleSymbols.slice(0, 6).join(', ')}
+          {staleSymbols.length > 6 && ` and ${staleSymbols.length - 6} more`}{' '}
+          {staleSymbols.length === 1 ? 'has' : 'have'} no live price — CoinGecko no longer lists
+          {staleSymbols.length === 1 ? ' it' : ' them'}, so the price from your imported snapshot is
+          used instead.
+        </p>
+      )}
 
       <footer className="mt-6 text-xs text-slate-600">
         Transactions imported {data.lastImportedAt} from {data.sources[0]}. Edit

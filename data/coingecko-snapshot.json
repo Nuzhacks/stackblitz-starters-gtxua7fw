@@ -407,6 +407,36 @@
       "totalProfitLoss": -93.34,
       "totalProfitLossPct": -99.9,
       "impliedPrice": 0.0001282
+    },
+    "KAR": {
+      "$note": "Staking reward, no cost basis. Only the list view was captured, so there is no CoinGecko summary card to check against.",
+      "holdings": 19,
+      "holdingsValue": 0.01265518,
+      "totalCost": 0,
+      "averageNetCost": 0,
+      "totalProfitLoss": 0.01265518,
+      "totalProfitLossPct": null,
+      "impliedPrice": 0.00066599
+    },
+    "COFFEE": {
+      "$note": "Cost supplied by the owner, not shown by CoinGecko. Delisted: no CoinGecko id resolved, so the price here is the only one available.",
+      "holdings": 3349.26,
+      "holdingsValue": 1.14,
+      "totalCost": 250,
+      "averageNetCost": 0.07464,
+      "totalProfitLoss": -248.86,
+      "totalProfitLossPct": -99.5,
+      "impliedPrice": 0.00034108
+    },
+    "BLOK": {
+      "$note": "Cost supplied by the owner, not shown by CoinGecko. Delisted from search and the coin list, but the id `bloktopia` still returns a price.",
+      "holdings": 1730.95,
+      "holdingsValue": 0.03812699,
+      "totalCost": 250,
+      "averageNetCost": 0.14443,
+      "totalProfitLoss": -249.96,
+      "totalProfitLossPct": -100.0,
+      "impliedPrice": 2.203e-05
     }
   }
 }

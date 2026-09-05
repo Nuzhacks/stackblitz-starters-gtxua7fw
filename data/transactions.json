@@ -3,7 +3,8 @@
   "baseCurrency": "GBP",
   "lastImportedAt": "2026-09-05",
   "sources": [
-    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-23:27"
+    "CoinGecko iOS app - portfolio screenshots captured 2026-09-05 22:09-23:27",
+    "KAR, $COFFEE and BLOK from the portfolio list view; costs for $COFFEE and BLOK supplied by the owner"
   ],
   "assets": [
     {
@@ -1329,6 +1330,54 @@
           "qty": 417.861,
           "cost": 93.3936,
           "currency": "GBP"
+        }
+      ]
+    },
+    {
+      "symbol": "KAR",
+      "name": "Karura",
+      "coingeckoId": "karura",
+      "colour": "#e40c5b",
+      "transactions": [
+        {
+          "date": null,
+          "type": "transfer_in",
+          "qty": 19.0,
+          "cost": 0,
+          "currency": "GBP",
+          "note": "Staking reward on another coin - no cost, date not recorded"
+        }
+      ]
+    },
+    {
+      "symbol": "COFFEE",
+      "name": "$COFFEE",
+      "coingeckoId": null,
+      "colour": "#a16207",
+      "transactions": [
+        {
+          "date": null,
+          "type": "buy",
+          "qty": 3349.26,
+          "cost": 250,
+          "currency": "GBP",
+          "note": "Amount stated from memory; date not recorded and no transaction history available"
+        }
+      ]
+    },
+    {
+      "symbol": "BLOK",
+      "name": "Bloktopia",
+      "coingeckoId": "bloktopia",
+      "colour": "#38bdf8",
+      "transactions": [
+        {
+          "date": null,
+          "type": "buy",
+          "qty": 1730.95,
+          "cost": 250,
+          "currency": "GBP",
+          "note": "Amount stated from memory; date not recorded and no transaction history available"
         }
       ]
     }

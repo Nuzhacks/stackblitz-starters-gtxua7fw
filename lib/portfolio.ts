@@ -67,7 +67,10 @@ export function buildPosition(asset: AssetData, prices: PriceMap): AssetPosition
       profitLoss === null || totalCost === 0 ? null : (profitLoss / totalCost) * 100,
     allocationPct: null,
     breakEvenPrice: qty > 0 ? netCost / qty : 0,
-    transactions: [...asset.transactions].sort((a, b) => b.date.localeCompare(a.date)),
+    // Undated transactions sort last; the source did not record when they happened.
+    transactions: [...asset.transactions].sort((a, b) =>
+      a.date === b.date ? 0 : a.date === null ? 1 : b.date === null ? -1 : b.date.localeCompare(a.date),
+    ),
     priceStale: prices[asset.symbol]?.stale ?? false,
     updatedAt: prices[asset.symbol]?.updatedAt ?? null,
   };

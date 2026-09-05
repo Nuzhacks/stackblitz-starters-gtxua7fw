@@ -1,6 +1,6 @@
 # Portfolio record
 
-Transcribed from CoinGecko app screenshots taken on 5 September 2026 (22:09–23:27).
+Transcribed from CoinGecko app screenshots taken on 5 September 2026 (22:09–23:27, plus a portfolio list view).
 The machine-readable source of truth is [`data/transactions.json`](data/transactions.json);
 this file is the human-readable copy, generated from it.
 
@@ -48,6 +48,7 @@ showed dates only, no times of day.**
 | FTM Fantom | 91.95 | £1.91 | £125.10 | — | £1.3605 | −£123.19 (-98.5%) | 2 |
 | ANKR Ankr Network | 458 | £1.44 | £50.38 | — | £0.1100 | −£48.94 (-97.1%) | 1 |
 | ENJ Enjin Coin | 59.48 | £1.21 | £166.76 | — | £2.8036 | −£165.55 (-99.3%) | 1 |
+| COFFEE $COFFEE | 3,349.26 | £1.14 | £250.00 | — | £0.0746 | −£248.86 (-99.5%) | 1 |
 | STREAM Solstream | 1,187 | £0.81 | £245.35 | — | £0.2067 | −£244.54 (-99.7%) | 1 |
 | ATRI Atari | 4,832 | £0.74 | £354.16 | — | £0.0733 | −£353.43 (-99.8%) | 3 |
 | MAIL SolMail | 4,039 | £0.49 | £180.10 | — | £0.0446 | −£179.61 (-99.7%) | 1 |
@@ -57,22 +58,25 @@ showed dates only, no times of day.**
 | GLMR Moonbeam | 24.05 | £0.12 | £255.65 | — | £10.63 | −£255.53 (-100.0%) | 1 |
 | WRLD NFT Worlds | 417.861 | £0.05 | £93.39 | — | £0.2235 | −£93.34 (-99.9%) | 1 |
 | LMT LIMITUS | 1,296.822 | £0.05 | £157.87 | — | £0.1217 | −£157.82 (-100.0%) | 1 |
-| **Total** | | **£44,461.37** | **£41,868.75** | **£1,105.53** | | **+£3,698.14 (+8.8%)** | **127** |
+| BLOK Bloktopia | 1,730.95 | £0.04 | £250.00 | — | £0.1444 | −£249.96 (-100.0%) | 1 |
+| KAR Karura | 19 | £0.01 | £0.00 | — | £0.0000 | +£0.01 | 1 |
+| **Total** | | **£44,462.56** | **£42,368.75** | **£1,105.53** | | **+£3,199.33 (+7.6%)** | **130** |
 
-Forty-five assets, 127 transactions. **Forty of the forty-five are underwater**, together
-about £16,550 of loss against £20,248 of gains.
+Forty-eight assets, 130 transactions. **Forty-two of the forty-eight are underwater**,
+together about £17,049 of loss against £20,248 of gains.
 
-Only five positions are up: BTC, ETH, SOL, XRP and UNI. BTC and ETH alone are 67% of
-portfolio value and, with the other three, the whole of the gain.
+Only five positions are up: BTC, ETH, SOL, XRP and UNI. KAR is technically positive
+because it cost nothing — it was a staking reward. BTC and ETH alone are 67% of
+portfolio value and, with the other three, effectively the whole of the gain.
 
-Worst by percentage: GLMR (−100.0%), LMT (−100.0%), WRLD (−99.9%), SRM (−99.9%),
-MIST (−99.8%), ATRI (−99.8%).
+Worst by percentage: BLOK (−100.0%), GLMR (−100.0%), LMT (−100.0%), WRLD (−99.9%),
+SRM (−99.9%), MIST (−99.8%).
 Worst in money: FIL (−£2,452), DOT (−£1,649), SUI (−£1,246), FLOW (−£972), CRV (−£919).
 
-**Thirty-four positions are worth under £250 each. Together they hold £1,029 against
-£12,154 invested** — 92% of the money in that tail is gone. Sixteen are worth under £5
-and nine under £1. At those sizes the position is worth less than a typical withdrawal
-fee, so they cannot be sold for a net gain at any plausible price.
+**Thirty-seven positions are worth under £250 each. Together they hold £1,030 against
+£12,654 invested** — 92% of the money in that tail is gone, and eleven are worth under
+£1. At those sizes the position is worth less than a typical withdrawal fee, so they
+cannot be sold for a net gain at any plausible price.
 
 ## Transactions by asset
 
@@ -428,6 +432,24 @@ fee, so they cannot be sold for a net gain at any plausible price.
 |---|---|---:|---:|---:|
 | 27 Feb 2022 | Buy | +417.861 | £93.39 | £0.2235 |
 
+## KAR — Karura
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| Date unknown | Transfer in | +19 | — | — |
+
+## COFFEE — $COFFEE
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| Date unknown | Buy | +3,349.26 | £250.00 | £0.0746 |
+
+## BLOK — Bloktopia
+
+| Date | Type | Quantity | Amount | Unit price |
+|---|---|---:|---:|---:|
+| Date unknown | Buy | +1,730.95 | £250.00 | £0.1444 |
+
 ## How the numbers are calculated
 
 The dashboard follows CoinGecko's own conventions so figures reconcile with the app the
@@ -440,7 +462,7 @@ data came from:
 - Transfers move quantity without touching cost or proceeds
 
 Verified: computed holdings, total cost, average net cost and profit match the CoinGecko
-figures for all forty-five assets (see `data/coingecko-snapshot.json`). A few profit
+figures for all forty-five assets that have a CoinGecko summary card (see `data/coingecko-snapshot.json`). A few profit
 percentages differ in the first decimal place — UNI, OMI and OCEAN — because CoinGecko
 rounds its displayed value and holdings before dividing. The largest such gap is worth
 about 6p in 100.
@@ -485,10 +507,24 @@ screenshots matched to within a fraction of a percent on every asset.
      840 or more.
    - **STREAM** and **MAIL** are `solstream` and `solmail`; neither appeared in search
      results and both had to be found in the full coin list.
-6. **WRLD price gap** — NFT Worlds is the one asset whose live price differs materially
+6. **Three positions with no transaction history** — KAR, $COFFEE and BLOK were captured
+   from the portfolio list view, which shows holdings and value but no transactions and
+   no summary card. Their entries therefore rest on what the owner recalls rather than on
+   anything CoinGecko displayed:
+   - **KAR** was a staking reward on another coin, so it carries no cost. Its £0.01 gain
+     is an artefact of a zero cost basis, not a return on anything.
+   - **$COFFEE** and **BLOK** are recorded at £250 each, the amount the owner stated.
+     Neither date is known, so both are stored with a null date and shown as
+     "Date unknown". These two figures are the only ones in this record not verified
+     against CoinGecko.
+   - **$COFFEE** is delisted and no CoinGecko id could be found for it, so it has no live
+     price and no id; the dashboard falls back to its imported price and flags it.
+     **BLOK** is delisted from search and the coin list, but the id `bloktopia` still
+     returns a price that matches the screenshot exactly.
+7. **WRLD price gap** — NFT Worlds is the one asset whose live price differs materially
    from the screenshot's implied value (£0.000103 against £0.000128, about 24%). The
    identity is not in doubt: it is the only coin of that name and ticker. The gap
    reflects how thinly the token trades — CoinGecko reports no 24-hour change for it at
    all, so quotes move in jumps between rare trades.
-5. **Possible missing assets** — forty-five were captured. Add more as screenshots
+5. **Possible missing assets** — forty-eight were captured. Add more as screenshots
    arrive.

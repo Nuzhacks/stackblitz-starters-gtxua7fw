@@ -36,7 +36,8 @@ export function originalAmount(cost: number, currency: string): string {
   return `${symbol}${cost.toLocaleString('en-GB', { maximumFractionDigits: 4 })}`;
 }
 
-export function shortDate(iso: string): string {
+export function shortDate(iso: string | null): string {
+  if (!iso) return 'Date unknown';
   const d = new Date(`${iso}T00:00:00Z`);
   if (Number.isNaN(d.getTime())) return iso;
   return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });

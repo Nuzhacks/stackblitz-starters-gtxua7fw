@@ -1,7 +1,8 @@
 export type TxType = 'buy' | 'sell' | 'transfer_in' | 'transfer_out';
 
 export interface Transaction {
-  date: string;
+  /** null when the date was not recorded in the source. */
+  date: string | null;
   type: TxType;
   qty: number;
   cost: number;
@@ -16,7 +17,8 @@ export interface Transaction {
 export interface AssetData {
   symbol: string;
   name: string;
-  coingeckoId: string;
+  /** null when the token has no resolvable CoinGecko id (delisted, or not identified). */
+  coingeckoId: string | null;
   colour: string;
   transactions: Transaction[];
 }
@@ -40,7 +42,7 @@ export type PriceMap = Record<string, PricePoint>;
 export interface AssetPosition {
   symbol: string;
   name: string;
-  coingeckoId: string;
+  coingeckoId: string | null;
   colour: string;
   qty: number;
   /** Sum of buy costs in GBP. Matches CoinGecko's "Total cost". */

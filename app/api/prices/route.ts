@@ -6,8 +6,10 @@ import type { PriceMap } from '@/lib/types';
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-const IDS = portfolio.assets.map((a) => a.coingeckoId);
-const BY_ID = new Map(portfolio.assets.map((a) => [a.coingeckoId, a.symbol]));
+const IDS = portfolio.assets.map((a) => a.coingeckoId).filter((id): id is string => Boolean(id));
+const BY_ID = new Map(
+  portfolio.assets.filter((a) => a.coingeckoId).map((a) => [a.coingeckoId as string, a.symbol]),
+);
 
 /**
  * Falls back to the prices implied by the imported CoinGecko snapshot so the
@@ -53,6 +55,13 @@ export async function GET() {
     }
 
     if (Object.keys(prices).length === 0) throw new Error('No prices returned');
+
+    // Delisted tokens, and any the lookup skipped, fall back to their imported price so the
+    // portfolio total stays complete. They are marked stale so the UI can say so.
+    const fallback = snapshotPrices();
+    for (const [symbol, point] of Object.entries(fallback)) {
+      if (!prices[symbol]) prices[symbol] = point;
+    }
 
     return NextResponse.json({ prices, source: 'coingecko', updatedAt });
   } catch (error) {
