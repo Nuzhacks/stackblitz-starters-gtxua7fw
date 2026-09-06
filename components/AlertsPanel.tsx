@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react';
 import type { AssetPosition } from '@/lib/types';
 import {
   ALERT_KIND_LABELS,
+  PER_ASSET_KINDS,
   evaluateAlert,
   newAlertId,
   suggestExitLadder,
@@ -16,6 +17,7 @@ interface Props {
   alerts: Alert[];
   positions: AssetPosition[];
   onChange: (alerts: Alert[]) => void;
+  portfolioValue: number;
   notificationState: NotificationPermission | 'unsupported';
   onEnableNotifications: () => void;
 }
@@ -27,12 +29,14 @@ const KIND_UNITS: Record<AlertKind, string> = {
   profit_pct_below: '%',
   value_above: '£',
   trailing_stop: '%',
+  portfolio_above: '£',
 };
 
 export default function AlertsPanel({
   alerts,
   positions,
   onChange,
+  portfolioValue,
   notificationState,
   onEnableNotifications,
 }: Props) {
@@ -49,12 +53,12 @@ export default function AlertsPanel({
   const evaluations = useMemo(
     () =>
       alerts
-        .map((alert) => evaluateAlert(alert, byId.get(alert.symbol)))
+        .map((alert) => evaluateAlert(alert, byId.get(alert.symbol), portfolioValue))
         .sort((a, b) => {
           if (a.firing !== b.firing) return a.firing ? -1 : 1;
           return b.progress - a.progress;
         }),
-    [alerts, byId],
+    [alerts, byId, portfolioValue],
   );
 
   function addAlert() {
@@ -147,7 +151,7 @@ export default function AlertsPanel({
           className="rounded-lg border border-ink-500 bg-ink-800 px-3 py-2 text-sm"
           aria-label="Condition"
         >
-          {(Object.keys(ALERT_KIND_LABELS) as AlertKind[]).map((k) => (
+          {PER_ASSET_KINDS.map((k) => (
             <option key={k} value={k}>
               {ALERT_KIND_LABELS[k]}
             </option>

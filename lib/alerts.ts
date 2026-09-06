@@ -7,7 +7,12 @@ export type AlertKind =
   | 'profit_pct_above'
   | 'profit_pct_below'
   | 'value_above'
-  | 'trailing_stop';
+  | 'trailing_stop'
+  /** Whole-portfolio level, not tied to one coin. Used by the exit planner. */
+  | 'portfolio_above';
+
+/** Symbol used by alerts that watch the portfolio as a whole. */
+export const PORTFOLIO_SCOPE = 'PORTFOLIO';
 
 export interface Alert {
   id: string;
@@ -43,7 +48,18 @@ export const ALERT_KIND_LABELS: Record<AlertKind, string> = {
   profit_pct_below: 'Total profit falls below',
   value_above: 'Holding value rises above',
   trailing_stop: 'Trailing stop from peak',
+  portfolio_above: 'Whole portfolio rises above',
 };
+
+/** Kinds a person picks per coin; portfolio_above is created by the exit planner instead. */
+export const PER_ASSET_KINDS: AlertKind[] = [
+  'price_above',
+  'price_below',
+  'profit_pct_above',
+  'profit_pct_below',
+  'value_above',
+  'trailing_stop',
+];
 
 export const STORAGE_KEY = 'crypto-dashboard.alerts.v1';
 
@@ -78,7 +94,24 @@ function clamp(n: number): number {
   return Math.max(0, Math.min(1, n));
 }
 
-export function evaluateAlert(alert: Alert, position: AssetPosition | undefined): AlertEvaluation {
+export function evaluateAlert(
+  alert: Alert,
+  position: AssetPosition | undefined,
+  portfolioValue?: number,
+): AlertEvaluation {
+  if (alert.kind === 'portfolio_above') {
+    const current = portfolioValue ?? 0;
+    return {
+      alert,
+      firing: current >= alert.threshold,
+      progress: clamp(current / alert.threshold),
+      current,
+      targetLabel: `£${alert.threshold.toLocaleString('en-GB', { maximumFractionDigits: 0 })}`,
+      currentLabel: `£${current.toLocaleString('en-GB', { maximumFractionDigits: 0 })}`,
+      message: `Portfolio reached £${alert.threshold.toLocaleString('en-GB', { maximumFractionDigits: 0 })}`,
+    };
+  }
+
   const price = position?.price ?? null;
   const base: Omit<AlertEvaluation, 'firing' | 'progress' | 'current' | 'targetLabel' | 'currentLabel' | 'message'> = { alert };
 

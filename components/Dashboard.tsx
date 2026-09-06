@@ -85,7 +85,7 @@ export default function Dashboard({ data }: { data: PortfolioData }) {
     for (const alert of alerts) {
       if (!alert.enabled) continue;
       const position = summary.positions.find((p) => p.symbol === alert.symbol);
-      const evaluation = evaluateAlert(alert, position);
+      const evaluation = evaluateAlert(alert, position, summary.totalValue);
       if (!evaluation.firing) continue;
       stillFiring.add(alert.id);
       if (firedRef.current.has(alert.id)) continue;
@@ -100,7 +100,9 @@ export default function Dashboard({ data }: { data: PortfolioData }) {
     () =>
       alerts
         .filter((a) => a.enabled)
-        .map((a) => evaluateAlert(a, summary.positions.find((p) => p.symbol === a.symbol)))
+        .map((a) =>
+          evaluateAlert(a, summary.positions.find((p) => p.symbol === a.symbol), summary.totalValue),
+        )
         .filter((e) => e.firing),
     [alerts, summary],
   );
@@ -356,6 +358,7 @@ export default function Dashboard({ data }: { data: PortfolioData }) {
       <AlertsPanel
         alerts={alerts}
         positions={summary.positions}
+        portfolioValue={summary.totalValue}
         onChange={updateAlerts}
         notificationState={notificationState}
         onEnableNotifications={enableNotifications}
