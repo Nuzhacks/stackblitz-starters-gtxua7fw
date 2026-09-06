@@ -47,6 +47,24 @@ That takes a minute or so — one request per coin, paced to stay inside CoinGec
 rate limit. Transactions with no recorded date cannot be placed on a timeline, so they
 are left out; the file records how much cost that excludes.
 
+## What the numbers say
+
+Below the chart is an analysis panel that recalculates from live prices on every refresh:
+
+- **Return per year** — the money-weighted return, which counts *when* each pound went in.
+  This is usually well below the headline profit percentage, because that figure ignores
+  timing and treats a pound invested last month the same as one invested in 2021.
+- **Purchases in profit** — how many individual buys are up, and what the winners and
+  losers each turned into.
+- **Worst fall so far** — the deepest peak-to-trough drop in the history, and the share of
+  weeks the portfolio was worth less than had been put in.
+- **Concentration** — the two largest holdings against everything else, as a share of money
+  invested and a share of value now.
+- **Every pound by the year you spent it**, and the best and worst single buys.
+
+Per-purchase figures value each buy as if it is still held, so sale proceeds are not
+deducted from them; the panel says so and the totals elsewhere handle sales properly.
+
 ## Exit alerts
 
 The alerts panel lets you set rules that are checked every time prices refresh:
